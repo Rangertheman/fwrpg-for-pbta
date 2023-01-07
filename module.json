@@ -30,43 +30,162 @@
          }
       ]
    },
-"dependencies": [
-    {
-      "name": "compendium-folders",
-      "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/10x-update/module.json",
-      "version": "2.5.0"
-    }
-  ],
-"esmodules": [
-    "module/fwrpg-for-pbta.mjs"
-  ],  
-   "packs": [
-    {
-      "label": "Common Moves",
-      "type": "Item",
-      "name": "common-moves",
-      "path": "packs/common-moves.db",
-      "system": "pbta",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "label": "Class Descriptions",
-      "type": "Item",
-      "name": "class-descriptions",
-      "path": "packs/class-descriptions.db",
-      "system": "pbta",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "label": "Playbooks",
-      "type": "Item",
-      "name": "playbooks",
-      "path": "packs/playbooks.db",
-      "system": "pbta",
-      "private": false,
-      "flags": {}
+   "esmodules":[
+      "module/fwrpg-for-pbta.mjs"
+   ],
+   "languages":[
+      {
+         "lang":"en",
+         "name":"English",
+         "path":"languages/en.json",
+         "flags":{
+            
+         }
+      }
+   ],
+   "packs":[
+      {
+         "label":"Common Moves",
+         "type":"Item",
+         "name":"common-moves",
+         "path":"packs/common-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Class Descriptions",
+         "type":"Item",
+         "name":"class-descriptions",
+         "path":"packs/class-descriptions.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Captain Moves",
+         "type":"Item",
+         "name":"captain-moves",
+         "path":"packs/captain-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Knight Moves",
+         "type":"Item",
+         "name":"knight-moves",
+         "path":"packs/knight-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Occultist Moves",
+         "type":"Item",
+         "name":"occultist-moves",
+         "path":"packs/occultist-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Priest Moves",
+         "type":"Item",
+         "name":"priest-moves",
+         "path":"packs/priest-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Veteran Moves",
+         "type":"Item",
+         "name":"veteran-moves",
+         "path":"packs/veteran-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Wildcaller Moves",
+         "type":"Item",
+         "name":"wildcaller-moves",
+         "path":"packs/wildcaller-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Maker Moves",
+         "type":"Item",
+         "name":"maker-moves",
+         "path":"packs/maker-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Wayfarer Moves",
+         "type":"Item",
+         "name":"wayfarer-moves",
+         "path":"packs/wayfarer-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Troubadour Moves",
+         "type":"Item",
+         "name":"troubadour-moves",
+         "path":"packs/troubadour-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Scoundrel Moves",
+         "type":"Item",
+         "name":"scoundrel-moves",
+         "path":"packs/scoundrel-moves.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Fantasy World Background",
+         "type":"Scene",
+         "name":"fantasy-world-background",
+         "path":"packs/fantasy-world-background.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
       }
    ]
 }

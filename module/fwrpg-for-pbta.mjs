@@ -4,13 +4,13 @@ import { configSheet } from "./sheet/protagonist_sheet.mjs"
 Hooks.once('init', () => {
 
   // register FWRPG settings
-  game.settings.register('fwrpg-for-pbta', 'settings-override', {
-    name: game.i18n.localize("FWRPG.Settings.Title"),
+  game.settings.register('fwrpg', 'settings-override', {
+    name: game.i18n.localize("fwrpg.Settings.Title"),
     default: false,
     type: Boolean,
     scope: 'world',
     config: true,
-    hint: game.i18n.localize("FWRPG.Settings.Hint"),
+    hint: game.i18n.localize("fwrpg.Settings.Hint"),
     onChange: () => setTimeout(() => {
         location.reload();
       }, 500)
@@ -23,7 +23,7 @@ Hooks.once('pbtaSheetConfig', () => {
   // Disable the sheet config form.
   game.settings.set('pbta', 'sheetConfigOverride', true);
   
-  // Replace the game.pbta.sheetConfig with WoDu version.
+  // Replace the game.pbta.sheetConfig with FWRPG version.
   configSheet();
 
 });

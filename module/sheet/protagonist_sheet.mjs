@@ -300,3 +300,17 @@ export const configSheet = async () => {
         }
     }
 }
+
+ // check if users wants to override settings; if not, hide all PbtA sheet options
+  let overrideSettings = await game.settings.get('fwrpg', 'settings-override');
+  
+  if (!overrideSettings) {
+    await game.settings.set('pbta', 'advForward', true);
+    await game.settings.set('pbta', 'hideRollFormula', true);
+    await game.settings.set('pbta', 'hideForward', true);
+    await game.settings.set('pbta', 'hideOngoing', true);
+    await game.settings.set('pbta', 'hideRollMode', false);
+    await game.settings.set('pbta', 'hideUses', true);
+  }
+  
+}
