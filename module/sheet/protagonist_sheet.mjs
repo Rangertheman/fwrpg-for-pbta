@@ -1,7 +1,7 @@
-Hooks.once('pbtaSheetConfig', () => {
-  // Disable the sheet config form.
-  game.settings.set('pbta', 'sheetConfigOverride', true);
-  // Replaces the game.pbta.sheetConfig with the Fantasy World RPG version.
+export const configSheet = async () => {
+
+  // pass FWRPG sheet object to sheetConfig
+
   game.pbta.sheetConfig = {
     "rollFormula": "2d6",
     "rollResults": {

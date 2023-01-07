@@ -38,7 +38,7 @@
     }
   ],
 "esmodules": [
-    "module/sheet/protagonist_sheet.mjs"
+    "module/fwrpg-for-pbta.mjs"
   ],  
    "packs": [
     {
