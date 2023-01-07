@@ -1,16 +1,16 @@
-import { configSheet } from "./sheet/protagonist_sheet.mjs"
+import { configSheet } from "./sheet/protagonist-sheet.mjs"
 
 // once the game has initialized, set up the module
 Hooks.once('init', () => {
 
   // register FWRPG settings
-  game.settings.register('fwrpg', 'settings-override', {
-    name: game.i18n.localize("fwrpg.Settings.Title"),
+  game.settings.register('fwrpg-for-pbta', 'settings-override', {
+    name: game.i18n.localize("fwrpg-for-pbta.Settings.Title"),
     default: false,
     type: Boolean,
     scope: 'world',
     config: true,
-    hint: game.i18n.localize("fwrpg.Settings.Hint"),
+    hint: game.i18n.localize("fwrpg-for-pbta.Settings.Hint"),
     onChange: () => setTimeout(() => {
         location.reload();
       }, 500)

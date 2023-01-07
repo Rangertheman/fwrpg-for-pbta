@@ -302,7 +302,7 @@ export const configSheet = async () => {
 }
 
  // check if users wants to override settings; if not, hide all PbtA sheet options
-  let overrideSettings = await game.settings.get('fwrpg', 'settings-override');
+  let overrideSettings = await game.settings.get('fwrpg-for-pbta', 'settings-override');
   
   if (!overrideSettings) {
     await game.settings.set('pbta', 'advForward', true);
