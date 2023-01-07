@@ -37,28 +37,36 @@
       "version": "2.5.0"
     }
   ],
-  
-   "packs":[
-      {
-         "label":"FW Class Descriptions",
-         "name":"class-descriptions",
-         "path":"./packs/class-descriptions.db",
-         "type":"Item",
-         "system":"pbta"
-      },
-      {
-         "label":"FW Common Moves",
-         "name":"common-moves",
-         "path":"./packs/common-moves",
-         "type":"Item",
-         "system":"pbta"
-      },
-      {
-         "label":"FW Playbooks",
-         "name":"playbooks",
-         "path":"./packs/playbooks.db",
-         "type":"Item",
-         "system":"pbta"
+"esmodules": [
+    "module/sheet/protagonist_sheet.mjs"
+  ],  
+   "packs": [
+    {
+      "label": "Common Moves",
+      "type": "Item",
+      "name": "common-moves",
+      "path": "packs/common-moves.db",
+      "system": "pbta",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Class Descriptions",
+      "type": "Item",
+      "name": "class-descriptions",
+      "path": "packs/class-descriptions.db",
+      "system": "pbta",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Playbooks",
+      "type": "Item",
+      "name": "playbooks",
+      "path": "packs/playbooks.db",
+      "system": "pbta",
+      "private": false,
+      "flags": {}
       }
    ]
 }
