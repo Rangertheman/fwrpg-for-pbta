@@ -36,7 +36,7 @@
       "./module/fwrpg-for-pbta.mjs"
    ],
    "styles":[
-      "styles/worldofdungeons.css"
+      "styles/fwrpg-for-pbta.css"
    ],
    "languages":[
       {
