@@ -1,6 +1,6 @@
 {
-   "id": "fwrpg-for-pbta",
-"name":"fwrpg-for-pbta",
+   "id":"fwrpg-for-pbta",
+   "name":"fwrpg-for-pbta",
    "title":"Fantasy World RPG (PbtA)",
    "description":"Fantasy World RPG custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
    "url":"https://github.com/Rangertheman/fwrpg-for-pbta",
@@ -25,7 +25,7 @@
          {
             "id":"pbta",
             "type":"system",
-"manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
+            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.0/system.json",
             "compatibility":{
                "verified":"0.7.0"
             }
@@ -33,7 +33,10 @@
       ]
    },
    "esmodules":[
-      "./module/fwrpgforpbta.mjs"
+      "./module/fwrpg-for-pbta.mjs"
+   ],
+   "styles":[
+      "./styles/fwrpg-for-pbta.css"
    ],
    "languages":[
       {
