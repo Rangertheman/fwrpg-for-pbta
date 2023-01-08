@@ -6,12 +6,15 @@
 }
 
 .pbta.sheet:is(.actor, .item) section.window-content {
-  background-color: #EEE6D2;
+  background-color: #FFFFFF;
   color: #0b6584;
 }
 
-.pbta.sheet:is(.actor, .item) section.window-content > form {
-    background: url('./img/FW_background.jpg') no-repeat top left;
+.pbta.sheet:is(.actor) section.window-content > form {
+    background: url('./img/top_left.jpg') no-repeat top left;
+}
+.pbta.sheet:is(.actor) section.window-content > form {
+    background: url('./img/top_right.jpg') no-repeat top right;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
