@@ -10,7 +10,7 @@
   color: #0b6584;
 }
 
-.pbta.sheet. .window-content > form {
+.pbta.sheet:is(.actor, .item) section.window-content > form {
     background: url('./img/FW_background.jpg') no-repeat top left;
 }
 
