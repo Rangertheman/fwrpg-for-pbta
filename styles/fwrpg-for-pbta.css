@@ -6,13 +6,8 @@
 }
 
 .pbta.sheet:is(.actor, .item) section.window-content {
-  background-color: #FFFFFF;
+  background-color: #f0ede7;
   color: #8e2231;
-}
-
-.pbta.sheet:is(.actor) section.window-content > form {
-    background: url('./img/top_right.jpg') no-repeat top right;
-padding: 0px 0px 0px 0px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
