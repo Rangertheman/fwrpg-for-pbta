@@ -14,9 +14,7 @@ Hooks.once('init', () => {
     onChange: () => setTimeout(() => {
         location.reload();
       }, 500)
-  });
-
-})
+  }};
 
 Hooks.once('pbtaSheetConfig', () => {
   
@@ -26,12 +24,4 @@ Hooks.once('pbtaSheetConfig', () => {
   // Replace the game.pbta.sheetConfig with FWRPG version.
   configSheet();
 
-});
-
-Hooks.on("renderActorSheet", async (app, html, options) => {
-
-          }
-      });
-  });
-  
-})
+}
