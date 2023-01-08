@@ -29,6 +29,7 @@ The following Foundry VTT game system must be installed: [Powered by the Apocaly
 
 * This module has been made possible with the kind and explicit permission from Alessandro Piroddi (Fantasy World RPG) and from Asacolips (PbtA system).   
 * The Powered by the Apocalypse system for Foundry VTT is created and maintained by Asacolips.
+* Thank you gonzaPaEst for great advice and for creating the WoDu module, which has given me lots of insights when it comes to writing modules.
 
 ## Licensing
 
