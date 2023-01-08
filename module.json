@@ -35,9 +35,7 @@
    "esmodules":[
       "./module/fwrpg-for-pbta.mjs"
    ],
-   "styles":[
-      "./styles/fwrpg-for-pbta.css"
-   ],
+   
    "languages":[
       {
          "lang":"en",
