@@ -75,7 +75,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "xp": {
-                  "label": "Experience",
+                  "label": "Expedience",
                   "description": "Spend 2 XPs before a roll to gain Advantage",
                   "customLabel": false,
                   "userLabel": false,
