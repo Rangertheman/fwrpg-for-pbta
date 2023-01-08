@@ -10,6 +10,10 @@
   color: #0b6584;
 }
 
+.pbta.sheet. .window-content > form {
+    background: url('./img/FW_background.jpg') no-repeat top left;
+}
+
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #0D7193;
   border-color: #0b6584;
