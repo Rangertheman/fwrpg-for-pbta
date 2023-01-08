@@ -11,10 +11,8 @@
 }
 
 .pbta.sheet:is(.actor) section.window-content > form {
-    background: url('./img/top_left.jpg') no-repeat top left;
-}
-.pbta.sheet:is(.actor) section.window-content > form {
     background: url('./img/top_right.jpg') no-repeat top right;
+padding: 0px 0px 0px 0px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
