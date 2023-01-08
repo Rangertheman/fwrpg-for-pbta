@@ -23,6 +23,13 @@ revert everything back to it's default state in the PbtA system.
 
 The following Foundry VTT game system must be installed: [Powered by the Apocalypse](https://gitlab.com/asacolips-projects/foundry-mods/pbta), by Asacolips.
 
+## Credits  
+
+* Fantasy World RPG is created by Alessandro Piroddi and Luca Maiorani. Copyright (c) 2022 MS Edizioni/Magic Store srl.
+
+* This module has been made possible with the kind and explicit permission from Alessandro Piroddi (Fantasy World RPG) and from Asacolips (PbtA system).   
+* The Powered by the Apocalypse system for Foundry VTT is created and maintained by Asacolips.
+
 ## Licensing
 
 Compendium content is derived from Fantasy World RPG, created by Alessandro Piroddi, and licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) License.
@@ -32,13 +39,6 @@ MIT License - Copyright (c) 2023 Rangertheman
 ## Feedback
 
 * Please, any suggestion or feedback is greatly appreciated. Use the issue system.
-
-## Credits  
-
-* Fantasy World RPG is created by Alessandro Piroddi and Luca Maiorani. Copyright (c) 2022 MS Edizioni/Magic Store srl.
-
-* This module has been made possible with the kind and explicit permission from Alessandro Piroddi (Fantasy World RPG) and from Asacolips (PbtA system).   
-* The Powered by the Apocalypse system for Foundry VTT is created and maintained by Asacolips.
 
 ## Versions
 
