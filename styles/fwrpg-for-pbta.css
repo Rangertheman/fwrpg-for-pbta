@@ -7,7 +7,7 @@
 
 .pbta.sheet:is(.actor, .item) section.window-content {
   background-color: #FFFFFF;
-  color: #0b6584;
+  color: #8e2231;
 }
 
 .pbta.sheet:is(.actor) section.window-content > form {
@@ -16,8 +16,8 @@ padding: 0px 0px 0px 0px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
-  background: #0D7193;
-  border-color: #0b6584;
+  background: #c73049;
+  border-color: #8e2231;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat :is(.cell__title, .stat-icon), .pbta.sheet .tabs .item {
@@ -38,13 +38,13 @@ padding: 0px 0px 0px 0px;
 }
 
 .pbta.sheet :is(.cell__title, .tabs, input)  {
-  color: #0b6584;
-  border-color: #0b6584;
+  color: #8e2231;
+  border-color: #8e2231;
 }
 
 .pbta.sheet .tabs .item:is(:hover, :focus) {
   border-color: white;
-  border-bottom-color: #0b6584;
+  border-bottom-color: #8e2231;
 }
 
 .pbta.sheet .cell__title button:hover {
@@ -53,12 +53,12 @@ padding: 0px 0px 0px 0px;
 
 .pbta.sheet .tabs .item.active {
   background: white;
-  color: #0b6584;
-  border-bottom: 2px solid #0b6584;
+  color: #8e2231;
+  border-bottom: 2px solid #8e2231;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0b6584;
+  background: #8e2231;
   border: 1px solid #257f9d;
 }
 
@@ -190,7 +190,7 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input:hover {
-  box-shadow: 0 0 5px #0D7193;
+  box-shadow: 0 0 5px #c73049;
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input[type=text]:hover {
@@ -202,8 +202,8 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
 }
 
 .pbta.sheet .cell__title button, .pbta.sheet .cell__subtitle button {
-  color: #0b6584;
-  border: 1px solid #0b6584;
+  color: #8e2231;
+  border: 1px solid #8e2231;
 }
 
 .pbta.sheet .sheet-wrapper .editor-content {
