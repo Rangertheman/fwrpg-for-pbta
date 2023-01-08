@@ -33,7 +33,7 @@
       ]
    },
    "esmodules":[
-      "./module/fwrpg-for-pbta.mjs"
+      "./module/fwrpgforpbta.mjs"
    ],
    "languages":[
       {
