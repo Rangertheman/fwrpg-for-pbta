@@ -11,7 +11,7 @@
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(40% - 10px);
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
