@@ -10,6 +10,10 @@
   color: #8e2231;
 }
 
+.pbta.sheet .sheet-attributes .cell--stats .stat {
+  flex: 0 0 calc(50% - 10px);
+}
+
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #c73049;
   border-color: #8e2231;
