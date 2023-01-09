@@ -7,7 +7,7 @@
 
 .pbta.sheet:is(.actor, .item) section.window-content {
   background-color: #c1ae97;
-  color: #21130d;
+  color: black;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat {
@@ -22,7 +22,7 @@
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
-  background: #c73049;
+  background: black;
   border-color: #8e2231;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .pbta.sheet :is(.cell__title, .tabs, input)  {
-  color: #c73049;
+  color: black;
   border-color: #8e2231;
 }
 
