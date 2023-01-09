@@ -11,10 +11,10 @@
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat {
-  flex: 0 0 calc(40% - 10px);
+  flex: 0 0 calc(50% - 10px);
 }
 
-.pbta.sheet .sheet-attributes .ccell--stats .stat .cell__title {
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
   width: 50%;
   min-width: 50%;
   border: none;
