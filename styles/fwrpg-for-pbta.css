@@ -11,7 +11,7 @@
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(45% - 10px);
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
@@ -80,7 +80,7 @@
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
   font: 2.4rem 'RunyTunes';
-  height: 30px;
+  height: 40px;
   padding-bottom: 5px;
 }
 
