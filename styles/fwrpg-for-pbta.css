@@ -81,8 +81,6 @@
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
   font: 2.4rem 'RunyTunes';
   height: 30px;
-  padding-bottom: 3px;
-padding-top: 3px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stats-list {
