@@ -39,7 +39,7 @@
 }
 
 .pbta.sheet :is(.sheet-attributes .cell--stats .stat, .tabs .item, .cell__title button):hover {
-  background: #f0ede7;
+  background: #c15c6c;
   color: white;
 }
 
@@ -196,7 +196,7 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input:hover {
-  box-shadow: 0 0 5px #b5949c;
+  box-shadow: 0 0 5px #c73049;
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input[type=text]:hover {
