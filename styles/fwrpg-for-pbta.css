@@ -14,6 +14,13 @@
   flex: 0 0 calc(40% - 10px);
 }
 
+.pbta.sheet .sheet-attributes .ccell--stats .stat .cell__title {
+  width: 50%;
+  min-width: 50%;
+  border: none;
+  margin-bottom: 0;
+}
+
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #c73049;
   border-color: #8e2231;
@@ -189,7 +196,7 @@ span.stat-icon.stat-rollable.rollable:hover .fa-dice-d6 {
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input:hover {
-  box-shadow: 0 0 5px #c73049;
+  box-shadow: 0 0 5px #b5949c;
 }
 
 .pbta.sheet :is(.cell--attributes-top, .cell--attributes-left) input[type=text]:hover {
