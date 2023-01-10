@@ -41,7 +41,7 @@
 .pbta.sheet :is(.sheet-attributes .cell--stats .stat, .tabs .item, .cell__title button):hover {
   background: #c15c6c;
   color: white;
-border-color: #c1ae97;
+  border-color: 2px solid #c1ae97;
 }
 
 .pbta.sheet :is(.cell__title, .tabs, input)  {
