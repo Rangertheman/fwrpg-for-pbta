@@ -97,12 +97,12 @@ export const configSheet = async () => {
                },
                "growth": {
                   "label": "Growth",
-                  "description": "Spend 5 XP during the End of Session move to mark Growth",
+                  "description": "Spend 5 or 10 XP to mark Growth *",
                   "customLabel": false,
                   "userLabel": false,
                   "type": "Xp",
                   "value": 0,
-                  "max": 5,
+                  "max": 10,
                   "steps": [
                      false,
                      false,
