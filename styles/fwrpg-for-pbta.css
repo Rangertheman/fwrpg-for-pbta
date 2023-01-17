@@ -12,6 +12,7 @@
 
 .pbta.sheet .sheet-attributes .cell--stats .stat {
   flex: 0 0 calc(45% - 10px);
+  border-radius: 10px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
