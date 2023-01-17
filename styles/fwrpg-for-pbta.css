@@ -24,7 +24,6 @@
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #8e2231;
   border-color: #8e2231;
-  border-radius: 10px 10px 0px 0px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat :is(.cell__title, .stat-icon), .pbta.sheet .tabs .item {
@@ -94,6 +93,7 @@
   height: 45px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .pbta.sheet.npc .tabs a.item {
