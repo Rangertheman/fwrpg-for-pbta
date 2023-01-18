@@ -1,0 +1,47 @@
+{{!-- Main --}}
+      <section class="sheet-main">
+
+        {{!-- Sheet Tab Navigation --}}
+        <nav class="sheet-tabs tabs" data-group="primary">
+          <a class="item" data-tab="description">{{localize "PBTA.Description"}}</a>
+          <a class="item" data-tab="moves">{{localize "PBTA.Moves"}}</a>
+          {{#unless isObserver}}
+          <a class="item" data-tab="equipment">{{localize "PBTA.Equipment"}}</a>
+          {{/unless}}
+        </nav>
+
+        {{!-- Sheet Body --}}
+        <section class="sheet-body">
+
+          {{!-- Main Tab --}}
+          <div class="tab description" data-group="primary" data-tab="description">
+            <div class="sheet-tab">
+              <div class="cell cell--bio">
+                <label class="cell__title">{{localize "MASKS-SHEETS.Look"}}</label>
+                {{editor system.attrLeft.look.value target="system.attrLeft.look.value" button=true owner=owner
+                editable=editable}}
+              </div>
+              <div class="cell cell--bio">
+                <label class="cell__title">{{localize "MASKS-SHEETS.Abilities"}}</label>
+                {{editor system.attrLeft.abilities.value target="system.attrLeft.abilities.value" button=true owner=owner
+                editable=editable}}
+              </div>
+              <div class="cell cell--bio">
+                <label class="cell__title">{{localize "MASKS-SHEETS.Backstory"}}</label>
+                {{editor system.details.biography target="system.details.biography" button=true owner=owner
+                editable=editable}}
+              </div>
+              {{#unless isObserver}}
+              <div class="cell cell--bio">
+                <label class="cell__title">{{localize "MASKS-SHEETS.TheTeam"}}</label>
+                {{editor system.details.team target="system.details.team" button=true owner=owner
+                editable=editable}}
+              </div>
+              <div class="cell cell--bio">
+                <label class="cell__title">{{localize "MASKS-SHEETS.Relationships"}}</label>
+                {{editor system.details.relationships target="system.details.relationships" button=true owner=owner
+                editable=editable}}
+              </div>
+              {{/unless}}
+            </div>
+          </div>
