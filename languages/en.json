@@ -1,5 +1,6 @@
 {
-   "RollMove":"Roll Move:",
+   "PBTA.Actor.types.character":"Protagonist",
+   "PBTA.Actor.types.npc":"Agent",
    "fwrpg":{
       "Settings":{
          "Title":"Override Setting Selections",
