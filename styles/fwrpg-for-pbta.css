@@ -22,6 +22,10 @@
   margin-bottom: 0;
 }
 
+pbta.sheet .sheet-resources .cell--roll-mode {
+  color: blue;
+}
+
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
   background: #8e2231;
   border-color: #8e2231;

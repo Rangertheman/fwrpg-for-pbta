@@ -1,8 +1,9 @@
 {
-    "fwrpg": {
-        "Settings": {
-            "Title": "Override Setting Selections",
-            "Hint": "The Fantasy World RPG module automatically hides all PbtA sheet options (formula, forward, ongoing, etc.), except for roll mode. If you want to make your own selections, please check this option off."
-        }
-    }
+   "RollMove":"Roll Move:",
+   "fwrpg":{
+      "Settings":{
+         "Title":"Override Setting Selections",
+         "Hint":"The Fantasy World RPG module automatically hides all PbtA sheet options (formula, forward, ongoing, etc.), except for roll mode. If you want to make your own selections, please check this option off."
+      }
+   }
 }
