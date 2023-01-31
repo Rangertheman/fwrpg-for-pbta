@@ -42,7 +42,15 @@
       {
          "lang":"en",
          "name":"English",
-         "path":"./languages/en.json",
+         "path":"./lang/en.json",
+         "flags":{
+            
+         }
+      },
+      {
+         "lang":"it",
+         "name":"Italiano",
+         "path":"./lang/it.json",
          "flags":{
             
          }
@@ -186,6 +194,17 @@
          "type":"JournalEntry",
          "name":"fantasy-world-srd",
          "path":"packs/fantasy-world-srd.db",
+         "system":"pbta",
+         "private":false,
+         "flags":{
+            
+         }
+      },
+      {
+         "label":"Fantasy World SRD (ITA)",
+         "type":"JournalEntry",
+         "name":"fantasy-world-srd-ita",
+         "path":"packs/fantasy-world-srd-ita.db",
          "system":"pbta",
          "private":false,
          "flags":{
