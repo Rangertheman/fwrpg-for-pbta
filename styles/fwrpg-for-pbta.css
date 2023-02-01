@@ -1,8 +1,8 @@
 /* FWRPG Sheet changes */
 
 @font-face {
-  font-family: "Libre Caslon Text";
-  src: url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap") format("truetype");
+  font-family: "Cormorant Garamond";
+  src: url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap") format("truetype");
 }
 
 .pbta.sheet:is(.actor, .item) section.window-content {
