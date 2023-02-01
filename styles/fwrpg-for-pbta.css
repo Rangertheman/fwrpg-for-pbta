@@ -91,7 +91,7 @@
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
   font: 2.1rem 'Amarante-Regular';
-  height: 40px;
+  height:30px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stats-list {
@@ -101,7 +101,7 @@
 .pbta.sheet .tabs a.item {
   align-self: center;
   font: 1.8rem 'Amarante-Regular';
-  height: 45px;
+  height: 35px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
   border-radius: 10px 10px 0px 0px;
@@ -110,7 +110,7 @@
 .pbta.sheet.npc .tabs a.item {
   align-self: center;
   font: 1.8rem 'Amarante-Regular';
-  height: 45px;
+  height: 35px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
 }
