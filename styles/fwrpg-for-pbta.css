@@ -1,8 +1,8 @@
 /* FWRPG Sheet changes */
 
 @font-face {
-  font-family: "RunyTunes";
-  src: url("./fonts/RunyTunesRevisitedNF.ttf") format("truetype");
+  font-family: "Amarante-Regular";
+  src: url("./fonts/Amarante-Regular.ttf") format("truetype");
 }
 
 .pbta.sheet:is(.actor, .item) section.window-content {
@@ -80,17 +80,17 @@
 }
 
 .pbta.sheet :is(.cell--attributes-top .cell__title) {
-  font: 2.1rem 'RunyTunes';
+  font: 2.1rem 'Amarante-Regular';
   justify-content: center;
   padding: 5px 0;
 }
 
 .pbta.sheet .cell--attributes-left .cell__title {
-  font: 1.9rem 'RunyTunes';
+  font: 1.9rem 'Amarante-Regular';
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
-  font: 2.4rem 'RunyTunes';
+  font: 2.4rem 'Amarante-Regular';
   height: 40px;
 }
 
@@ -100,7 +100,7 @@
 
 .pbta.sheet .tabs a.item {
   align-self: center;
-  font: 2.1rem 'RunyTunes';
+  font: 2.1rem 'Amarante-Regular';
   height: 45px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
@@ -109,7 +109,7 @@
 
 .pbta.sheet.npc .tabs a.item {
   align-self: center;
-  font: 2.1rem 'RunyTunes';
+  font: 2.1rem 'Amarante-Regular';
   height: 45px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
