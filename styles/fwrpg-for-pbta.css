@@ -80,17 +80,17 @@
 }
 
 .pbta.sheet :is(.cell--attributes-top .cell__title) {
-  font: 2.1rem 'Amarante-Regular';
+  font: 1.8rem 'Amarante-Regular';
   justify-content: center;
   padding: 5px 0;
 }
 
 .pbta.sheet .cell--attributes-left .cell__title {
-  font: 1.9rem 'Amarante-Regular';
+  font: 1.7rem 'Amarante-Regular';
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
-  font: 2.4rem 'Amarante-Regular';
+  font: 2.1rem 'Amarante-Regular';
   height: 40px;
 }
 
@@ -100,7 +100,7 @@
 
 .pbta.sheet .tabs a.item {
   align-self: center;
-  font: 2.1rem 'Amarante-Regular';
+  font: 1.8rem 'Amarante-Regular';
   height: 45px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
@@ -109,7 +109,7 @@
 
 .pbta.sheet.npc .tabs a.item {
   align-self: center;
-  font: 2.1rem 'Amarante-Regular';
+  font: 1.8rem 'Amarante-Regular';
   height: 45px;
   margin: 0 10px 6px;
   padding: 0 0 1px;
