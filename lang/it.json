@@ -17,7 +17,8 @@
          "doubt":"Dubbio",
          "expedience":"Punti espediente",
          "hp":"Punti fermezza"
-      },
+      }
+   },
       "FWRPG-SHEET":{
          "Growth":"Crescita",
          "Blood":"Sangue",
@@ -30,4 +31,3 @@
          "Moves":"Mosse"
       }
    }
-}
