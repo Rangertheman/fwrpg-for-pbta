@@ -5,15 +5,23 @@
          "Hint":"The Fantasy World RPG module automatically hides all PbtA sheet options (formula, forward, ongoing, etc.), except for roll mode. If you want to make your own selections, please check this option off."
       },
       "rollResult":{
-         "success": "Major Boon!",
-         "partial": "Minor Boon",
-         "miss": "Snag"
-   },
+         "success":"Major Boon!",
+         "partial":"Minor Boon",
+         "miss":"Snag"
+      },
       "statLabel":{
-         "daring": "Daring",
-         "intense": "Intense",
-         "knowing": "Knowing",
-         "vigilant": "Vigilant"
+         "daring":"Daring",
+         "intense":"Intense",
+         "knowing":"Knowing",
+         "vigilant":"Vigilant",
+         "blood":"Blood",
+         "kin":"Kin",
+         "issue":"Issue",
+         "doubt":"Doubt",
+         "expedience":"Expedience",
+         "growth":"Growth",
+         "look":"Look",
+         "hp":"Hardiness Points"
       }
-}
+   }
 }

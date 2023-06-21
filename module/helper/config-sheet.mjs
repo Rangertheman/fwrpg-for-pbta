@@ -43,7 +43,7 @@ export const configSheet = async () => {
             },
             "attrTop": {
                "blood": {
-                  "label": "Blood",
+                  "label": game.i18n.localize("fwrpg.statLabel.blood"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -51,7 +51,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "kin": {
-                  "label": "Kin",
+                  "label": game.i18n.localize("fwrpg.statLabel.kin"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -59,7 +59,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "issue": {
-                  "label": "Issue",
+                  "label": game.i18n.localize("fwrpg.statLabel.issue"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -67,7 +67,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "doubt": {
-                  "label": "Doubt",
+                  "label": game.i18n.localize("fwrpg.statLabel.doubt"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -75,7 +75,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "xp": {
-                  "label": "Expedience",
+                  "label": game.i18n.localize("fwrpg.statLabel.expedience")",
                   "description": "Spend 2 XPs before a roll to gain Advantage",
                   "customLabel": false,
                   "userLabel": false,
@@ -96,7 +96,7 @@ export const configSheet = async () => {
                   ]
                },
                "growth": {
-                  "label": "Growth",
+                  "label": game.i18n.localize("fwrpg.statLabel.growth"),
                   "description": "Spend 5 or 10 XP to mark Growth *",
                   "customLabel": false,
                   "userLabel": false,
@@ -114,7 +114,7 @@ export const configSheet = async () => {
             },
             "attrLeft": {
                "look": {
-                  "label": "Look",
+                  "label": game.i18n.localize("fwrpg.statLabel.look"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -122,7 +122,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "hard": {
-                  "label": "Hardiness Points",
+                  "label": game.i18n.localize("fwrpg.statLabel.hp"),
                   "description": "Spend 1 HP to reduce harm by one level:\nDeadly > Serious > Temp > No harm",
                   "customLabel": false,
                   "userLabel": false,
