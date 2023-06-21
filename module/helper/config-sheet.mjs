@@ -8,36 +8,36 @@ export const configSheet = async () => {
          "success": {
             "start": 10,
             "end": null,
-            "label": "Major Boon!"
-         },
+            "label": game.i18n.localize("fwrpg.rollResult.success")
+                  },
          "partial": {
             "start": 7,
             "end": 9,
-            "label": "Minor Boon"
+            "label": game.i18n.localize("fwrpg.rollResult.partial")
          },
          "failure": {
             "start": null,
             "end": 6,
-            "label": "Snag"
+            "label": game.i18n.localize("fwrpg.rollResult.miss")
          }
       },
       "actorTypes": {
          "character": {
             "stats": {
                "dar": {
-                  "label": "Daring",
+                  "label": game.i18n.localize("fwrpg.statLabel.daring"),
                   "value": 0
                },
                "int": {
-                  "label": "Intense",
+                  "label": game.i18n.localize("fwrpg.statLabel.intense"),
                   "value": 0
                },
                "kno": {
-                  "label": "Knowing",
+                  "label": game.i18n.localize("fwrpg.statLabel.knowing"),
                   "value": 0
                },
                "vig": {
-                  "label": "Vigilant",
+                  "label": game.i18n.localize("fwrpg.statLabel.vigilant"),
                   "value": 0
                }
             },

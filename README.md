@@ -39,14 +39,4 @@ MIT License - Copyright (c) 2023 Rangertheman
 
 ## Feedback
 
-* Please, any suggestion or feedback is greatly appreciated. Use the issue system.
-
-## Versions
-
-Version 0.1.0
-
-* Initial release
-
-Version 0.0.9
-
-* Pre-release version.
+* Any suggestions or feedback are greatly appreciated. Please use the issue system.
