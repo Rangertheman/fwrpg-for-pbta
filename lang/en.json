@@ -14,14 +14,20 @@
          "intense":"Intense",
          "knowing":"Knowing",
          "vigilant":"Vigilant",
-         "blood":"Blood",
-         "kin":"Kin",
-         "issue":"Issue",
          "doubt":"Doubt",
          "expedience":"Expedience",
-         "growth":"Growth",
-         "look":"Look",
          "hp":"Hardiness Points"
       }
+   },
+      "FWRPG-SHEET":{
+         "Growth":"Growth",
+         "Blood":"Blood",
+         "Kin":"Kin",
+         "Look":"Look",
+         "Issue":"Issue"
+      },
+      "PBTA":{
+         "Description":"Description",
+         "Moves":"Moves"
+      }
    }
-}

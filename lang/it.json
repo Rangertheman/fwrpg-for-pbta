@@ -14,14 +14,20 @@
          "intense":"Intenso",
          "knowing":"Sapiente",
          "vigilant":"Vigile",
-         "blood":"Sangue",
-         "kin":"Appartenenza",
-         "issue":"Problema",
          "doubt":"Dubbio",
          "expedience":"Punti espediente",
-         "growth":"crescita",
-         "look":"Aspetto",
          "hp":"Punti fermezza"
+      },
+      "FWRPG-SHEET":{
+         "Growth":"Crescita",
+         "Blood":"Sangue",
+         "Kin":"Appartenenza",
+         "Look":"Aspetto",
+         "Issue":"Problema"
+      },
+      "PBTA":{
+         "Description":"Descrizione",
+         "Moves":"Mosse"
       }
    }
 }
