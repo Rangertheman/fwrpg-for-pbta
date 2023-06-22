@@ -76,7 +76,7 @@ export const configSheet = async () => {
                },
                "xp": {
                   "label": game.i18n.localize("fwrpg.statLabel.expedience"),
-                  "description": "Spend 2 XPs before a roll to gain Advantage",
+                  "description": game.i18n.localize("fwrpg.statDescription.expedienceDesc"),
                   "customLabel": false,
                   "userLabel": false,
                   "type": "Xp",
@@ -97,7 +97,7 @@ export const configSheet = async () => {
                },
                "growth": {
                   "label": game.i18n.localize("fwrpg.statLabel.growth"),
-                  "description": "Spend 5 or 10 XP to mark Growth *",
+                  "description": game.i18n.localize("fwrpg.statDescription.growthDesc"),
                   "customLabel": false,
                   "userLabel": false,
                   "type": "Xp",
@@ -123,7 +123,7 @@ export const configSheet = async () => {
                },
                "hard": {
                   "label": game.i18n.localize("fwrpg.statLabel.hp"),
-                  "description": "Spend 1 HP to reduce harm by one level:\nDeadly > Serious > Temp > No harm",
+                  "description": game.i18n.localize("fwrpg.statDescription.hpDesc"),
                   "customLabel": false,
                   "userLabel": false,
                   "type": "Resource",

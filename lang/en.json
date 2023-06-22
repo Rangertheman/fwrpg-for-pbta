@@ -22,6 +22,11 @@
          "kin":"Kin",
          "look":"Look",
          "issue":"Issue"
+      },
+      "statDescription":{
+         "expedienceDesc":"Spend 2 XPs before a roll to gain Advantage",
+         "growthDesc":"Spend 5 or 10 XP to mark Growth *",
+         "hpDesc":"Spend 1 HP to reduce harm by one level:\nDeadly > Serious > Temp > No harm"
       }
    },
    "FWRPG-SHEET":{
