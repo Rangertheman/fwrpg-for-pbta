@@ -16,18 +16,25 @@
          "vigilant":"Vigile",
          "doubt":"Dubbio",
          "expedience":"Punti espediente",
-         "hp":"Punti fermezza"
-      }
-   },
-      "FWRPG-SHEET":{
+         "hp":"Punti fermezza",
          "Growth":"Crescita",
          "Blood":"Sangue",
          "Kin":"Appartenenza",
          "Look":"Aspetto",
          "Issue":"Problema"
-      },
-      "PBTA":{
-         "Description":"Descrizione",
-         "Moves":"Mosse"
       }
+   },
+   "FWRPG-SHEET":{
+      "Growth":"Crescita",
+      "Blood":"Sangue",
+      "Kin":"Appartenenza",
+      "Look":"Aspetto",
+      "Issue":"Problema",
+      "Doubt":"Dubbio"
+   },
+   "PBTA":{
+      "Description":"Descrizione",
+      "Moves":"Mosse",
+      "Equipment":"Equipaggiamento"
    }
+}

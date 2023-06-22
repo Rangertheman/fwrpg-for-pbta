@@ -75,7 +75,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "xp": {
-                  "label": game.i18n.localize("fwrpg.statLabel.expedience")",
+                  "label": game.i18n.localize("fwrpg.statLabel.expedience"),
                   "description": "Spend 2 XPs before a roll to gain Advantage",
                   "customLabel": false,
                   "userLabel": false,

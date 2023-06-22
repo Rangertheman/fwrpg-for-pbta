@@ -16,18 +16,25 @@
          "vigilant":"Vigilant",
          "doubt":"Doubt",
          "expedience":"Expedience",
-         "hp":"Hardiness Points"
+         "hp":"Hardiness Points",
+         "growth":"Growth",
+         "blood":"Blood",
+         "kin":"Kin",
+         "look":"Look",
+         "issue":"Issue"
       }
    },
-      "FWRPG-SHEET":{
-         "Growth":"Growth",
-         "Blood":"Blood",
-         "Kin":"Kin",
-         "Look":"Look",
-         "Issue":"Issue"
-      },
-      "PBTA":{
-         "Description":"Description",
-         "Moves":"Moves"
-      }
+   "FWRPG-SHEET":{
+      "Growth":"Growth",
+      "Blood":"Blood",
+      "Kin":"Kin",
+      "Look":"Look",
+      "Issue":"Issue",
+      "Doubt":"Doubt"
+   },
+   "PBTA":{
+      "Description":"Description",
+      "Moves":"Moves",
+      "Equipment":"Equipment"
    }
+}
