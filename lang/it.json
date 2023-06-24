@@ -61,7 +61,7 @@
          "type": "Tipo | Generi",
          "impulse": "Impulso",
          "cast": "Cast",
-         "conections": "Connessioni",
+         "connections": "Connessioni",
          "reactions": "Reazioni",
          "fate": "Fato",
          "notes": "Note"

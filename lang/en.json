@@ -61,7 +61,7 @@
          "type": "Type | Subtype",
          "impulse": "Impulse",
          "cast": "Cast",
-         "conections": "Connections",
+         "connections": "Connections",
          "reactions": "Reactions",
          "fate": "Stakes",
          "notes": "Notes"
