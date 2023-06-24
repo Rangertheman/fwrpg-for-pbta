@@ -108,6 +108,11 @@ export const configSheet = async () => {
                      false,
                      false,
                      false,
+                     false,
+                     false,
+                     false,
+                     false,
+                     false,
                      false
                   ]
                }
