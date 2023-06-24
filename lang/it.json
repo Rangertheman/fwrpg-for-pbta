@@ -17,14 +17,14 @@
          "doubt":"Dubbio",
          "expedience":"Espediente",
          "hp":"Punti fermezza",
-         "Growth":"Crescita",
-         "Blood":"Sangue",
-         "Kin":"Appartenenza",
-         "Look":"Aspetto",
-         "Issue":"Problema"
+         "growth":"Crescita",
+         "blood":"Sangue",
+         "kin":"Appartenenza",
+         "look":"Aspetto",
+         "issue":"Problema"
       },
       "statDescription":{
-         "expedienceDesc":"Spendi 2 PE prima di un tiro per ottenere Vantaggio (puoi farlo più volte).",
+         "expedienceDesc":"Spendi 2 PE prima di un tiro per ottenere Vantaggio.",
          "growthDesc":"Spendi 5 o 10 PE per marcare Crescite *",
          "hpDesc":"Spendi 1 PF per ridurre il danno di un livello:\nMortale > Serio > Temp > Nessun danno"
       }
