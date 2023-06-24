@@ -79,6 +79,8 @@
    "PBTA":{
       "Description":"Description",
       "Moves":"Moves",
-      "Equipment":"Equipment"
+      "Equipment":"Equipment",
+      "Biography": "Biography",
+      "Playbook": "Playbook"
    }
 }
