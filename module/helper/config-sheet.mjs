@@ -144,23 +144,23 @@ export const configSheet = async () => {
                   "condition": false,
                   "options": {
                      "0": {
-                        "label": "You look and feel like a mess: bloody, bruised, and torn up",
+                        "label": game.i18n.localize("fwrpg.harmLabel.tempEffect0"),
                         "value": false
                      },
                      "1": {
-                        "label": "You lose hold of something important you were carrying or wearing",
+                        "label": game.i18n.localize("fwrpg.harmLabel.tempEffect1"),
                         "value": false
                      },
                      "2": {
-                        "label": "You lose footing or end up in a problematic position",
+                        "label": game.i18n.localize("fwrpg.harmLabel.tempEffect2"),
                         "value": false
                      },
                      "3": {
-                        "label": "You are held by something that clutches/ tangles/impedes you",
+                        "label": game.i18n.localize("fwrpg.harmLabel.tempEffect3"),
                         "value": false
                      },
                      "4": {
-                        "label": "You are out cold, unconscious or powerless until the World says otherwise",
+                        "label": game.i18n.localize("fwrpg.harmLabel.tempEffect4"),
                         "value": false
                      }
                   }
@@ -174,19 +174,19 @@ export const configSheet = async () => {
                   "condition": false,
                   "options": {
                      "0": {
-                        "label": "An open and vicious gash that, after healing, will leave a permanent scar (make a Tag of this)",
+                        "label": game.i18n.localize("fwrpg.harmLabel.seriousEffect0"),
                         "value": false
                      },
                      "1": {
-                        "label": "You are actively impeded by pain and injury in doing anything requiring effort or strain",
+                        "label": game.i18n.localize("fwrpg.harmLabel.seriousEffect1"),
                         "value": false
                      },
                      "2": {
-                        "label": "You broke or mangled one or more of your limbs, which are now inoperable",
+                        "label": game.i18n.localize("fwrpg.harmLabel.seriousEffect2"),
                         "value": false
                      },
                      "3": {
-                        "label": "One of your eyes or ears is ruined, forever hampering your senses (make a Tag of this)",
+                        "label": game.i18n.localize("fwrpg.harmLabel.seriousEffect3"),
                         "value": false
                      }
                   }
@@ -200,15 +200,15 @@ export const configSheet = async () => {
                   "condition": false,
                   "options": {
                      "0": {
-                        "label": "Your condition is bad and will develop complications; you will die within a few days",
+                        "label": game.i18n.localize("fwrpg.harmLabel.deadlyEffect0"),
                         "value": false
                      },
                      "1": {
-                        "label": "Your condition deteriorates rapidly; you will die within a few hours",
+                        "label": game.i18n.localize("fwrpg.harmLabel.deadlyEffect1"),
                         "value": false
                      },
                      "2": {
-                        "label": "Your heart stops beating; you are dead or will die in a matter of seconds.",
+                        "label": game.i18n.localize("fwrpg.harmLabel.deadlyEffect2"),
                         "value": false
                      }
                   }
@@ -216,21 +216,21 @@ export const configSheet = async () => {
             },
             "moveTypes": {
                "comon": {
-                  "label": "Common Moves",
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.commonMoves"),
                   "moves": []
                },
                "start": {
-                  "label": "Starting Moves",
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.startingMoves"),
                   "moves": []
                },
                "growth": {
-                  "label": "Growth Moves",
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.growthMoves"),
                   "moves": []
                }
             },
             "equipmentTypes": {
                "gear": {
-                  "label": "TAGS | EQUIPMENT",
+                  "label": game.i18n.localize("fwrpg.equipmentLabel.gear"),
                   "moves": []
                }
             }
@@ -238,7 +238,7 @@ export const configSheet = async () => {
          "npc": {
             "attrTop": {
                "type": {
-                  "label": "Type | Subtype",
+                  "label": game.i18n.localize("fwrpg.npcLabel.type"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -246,7 +246,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "impulse": {
-                  "label": "Impulse",
+                  "label": game.i18n.localize("fwrpg.npcLabel.impulse"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -254,7 +254,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "cast": {
-                  "label": "Cast",
+                  "label": game.i18n.localize("fwrpg.npcLabel.cast"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -262,7 +262,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "connections": {
-                  "label": "Connections",
+                  "label": game.i18n.localize("fwrpg.npcLabel.connections"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -272,7 +272,7 @@ export const configSheet = async () => {
             },
             "attrLeft": {
                "reactions": {
-                  "label": "Reactions",
+                  "label": game.i18n.localize("fwrpg.npcLabel.reactions"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -280,7 +280,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "stakes": {
-                  "label": "Stakes",
+                  "label": game.i18n.localize("fwrpg.npcLabel.fate"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -288,7 +288,7 @@ export const configSheet = async () => {
                   "value": ""
                },
                "notes": {
-                  "label": "Notes",
+                  "label": game.i18n.localize("fwrpg.npcLabel.notes"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -298,7 +298,7 @@ export const configSheet = async () => {
             },
             "moveTypes": {
                "actions": {
-                  "label": "World Actions",
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.worldAction"),
                   "moves": []
                }
             }

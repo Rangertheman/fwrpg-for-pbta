@@ -31,9 +31,42 @@
       "harmLabel":{
          "temp": "DAMNI TEMPORANEI",
          "serious": "DAMNI SERI",
-         "deadly": "DAMNI MORTALI"
+         "deadly": "DAMNI MORTALI",
+
+         "tempEffect0": "Appari e ti senti un disastro: sanguinante, ammaccato e lacero.",
+         "tempEffect1": "Perdi il possesso di qualcosa d'importante che stavi trasportando o indossando.",
+         "tempEffect2": "Perdi l'equilibrio o finisci in una posizione Problematica.",
+         "tempEffect3": "Sei trattenuto da qualcosa che ti afferra/avviluppa/impaccia.",
+         "tempEffect4": "Sei fuori gioco, incosciente o impotente finché il Mondo non dice altrimenti.",
+
+         "seriousEffect0": "Una brutta e profonda lesione che, dopo la guarigione, lascerà una cicatrice permanente (fanne un'Etichetta).",
+         "seriousEffect1": "Dolore e traumi ti ostacolano attivamente nel fare qualsiasi cosa richieda sforzo o impegno.",
+         "seriousEffect2": "Uno o più dei tuoi arti è rotto o dilaniato, per ora inutilizzabile.",
+         "seriousEffect3": "Uno dei tuoi occhi o orecchie è rovinato, per sempre limitando i tuoi sensi (fanne un'Etichetta).",
+
+         "deadlyEffect0": "Le tue condizioni sono brutte e porteranno a complicazioni; morirai in pochi giorni.",
+         "deadlyEffect1": "Le tue condizioni peggioreranno rapidamente; morirai in poche ore.",
+         "deadlyEffect2": "Il tuo cuore smette di battere; sei morto o morirai nel giro di secondi."
+      },
+      "moveTypeLabel":{
+         "commonMoves": "Mosse Communi",
+         "startingMoves": "Mosse Iniziali",
+         "growthMoves": "Mosse di Crescita",
+         "worldAction": "Reazioni del Mondo"
+      },
+      "equipmentTypeLabel":{
+         "gear": "ETICHETTE | EQUIPAGGIAMENTO | ALTRO"
+      },
+      "npcLabel":{
+         "type": "Tipo | Generi",
+         "impulse": "Impulso",
+         "cast": "Cast",
+         "conections": "Connessioni",
+         "reactions": "Reazioni",
+         "fate": "Fato",
+         "notes": "Note"
       }
-   },
+      },
    "FWRPG-SHEET":{
       "Growth":"Crescita",
       "Blood":"Sangue",
