@@ -27,6 +27,11 @@
          "expedienceDesc":"Spendi 2 PE prima di un tiro per ottenere Vantaggio.",
          "growthDesc":"Spendi 5 o 10 PE per marcare Crescite *",
          "hpDesc":"Spendi 1 PF per ridurre il danno di un livello:\nMortale > Serio > Temp > Nessun danno"
+      },
+      "harmLabel":{
+         "temp": "DAMNI TEMPORANEI",
+         "serious": "DAMNI SERI",
+         "deadly": "DAMNI MORTALI"
       }
    },
    "FWRPG-SHEET":{

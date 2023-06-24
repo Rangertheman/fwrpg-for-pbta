@@ -27,8 +27,14 @@
          "expedienceDesc":"Spend 2 XPs before a roll to gain Advantage",
          "growthDesc":"Spend 5 or 10 XP to mark Growth *",
          "hpDesc":"Spend 1 HP to reduce harm by one level:\nDeadly > Serious > Temp > No harm"
+      },
+      "harmLabel":{
+         "temp": "TEMP HARM",
+         "serious": "SERIOUS HARM",
+         "deadly": "DEADLY HARM"
       }
-   },
+      },
+
    "FWRPG-SHEET":{
       "Growth":"Growth",
       "Blood":"Blood",

@@ -136,7 +136,7 @@ export const configSheet = async () => {
                   "max": 3
                },
                "tempharm": {
-                  "label": "TEMP HARM",
+                  "label": game.i18n.localize("fwrpg.harmLabel.temp"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -166,7 +166,7 @@ export const configSheet = async () => {
                   }
                },
                "seriousharm": {
-                  "label": "SERIOUS HARM",
+                  "label": game.i18n.localize("fwrpg.harmLabel.serious"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
@@ -192,7 +192,7 @@ export const configSheet = async () => {
                   }
                },
                "deadlyharm": {
-                  "label": "DEADLY HARM",
+                  "label": game.i18n.localize("fwrpg.harmLabel.deadly"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
