@@ -15,7 +15,7 @@
          "knowing":"Knowing",
          "vigilant":"Vigilant",
          "doubt":"Doubt",
-         "expedience":"Expedience",
+         "expedience":"Expedience Points",
          "hp":"Hardiness Points",
          "growth":"Growth",
          "blood":"Blood",
@@ -24,9 +24,9 @@
          "issue":"Issue"
       },
       "statDescription":{
-         "expedienceDesc":"Spend 2 XPs before a roll to gain Advantage",
-         "growthDesc":"Spend 5 or 10 XP to mark Growth *",
-         "hpDesc":"Spend 1 HP to reduce harm by one level:\nDeadly > Serious > Temp > No harm"
+         "expedienceDesc":"Spend 2 EPs before a roll to gain Advantage (you can do it more than once).",
+         "growthDesc":"During End of Session, spend 5 or 10 EP to mark 1 or 2 Growths, respectively.",
+         "hpDesc":"Spend 1 HP to reduce harm by one level:\n Deadly > Serious > Temp > No harm"
       },
       "harmLabel":{
          "temp": "TEMP HARM",
@@ -55,7 +55,7 @@
          "worldAction": "World Actions"
       },
       "equipmentTypeLabel":{
-         "gear": "TAGS | EQUIPMENT | OTHER"
+         "gear": "Equipment"
       },
       "npcLabel":{
          "type": "Type | Subtype",
@@ -68,7 +68,7 @@
       }
       },
 
-   "FWRPG-SHEET":{
+   "FWRPG-SHEETS":{
       "Growth":"Growth",
       "Blood":"Blood",
       "Kin":"Kin",
