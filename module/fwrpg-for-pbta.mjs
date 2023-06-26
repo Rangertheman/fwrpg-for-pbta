@@ -1,6 +1,6 @@
 import { configSheet } from "./helper/config-sheet.mjs";
 import { PbtaActorSheet } from "../../../systems/pbta/module/actor/actor-sheet.js";
-import { migrationScript } from "./helper/migration-script.mjs";
+import { migrationScript } from "migrationScript.js";
 
 export class FwrpgPbtASheet extends PbtaActorSheet {
    #dataPath = "system";
