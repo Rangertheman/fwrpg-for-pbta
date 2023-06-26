@@ -1,5 +1,6 @@
 import { configSheet } from "./helper/config-sheet.mjs";
 import { PbtaActorSheet } from "../../../systems/pbta/module/actor/actor-sheet.js";
+import { migrationScript } from "./helper/migration-script.mjs";
 
 export class FwrpgPbtASheet extends PbtaActorSheet {
    #dataPath = "system";
@@ -56,4 +57,6 @@ Hooks.once('pbtaSheetConfig', () => {
    // Replace the game.pbta.sheetConfig with FWRPG version.
    configSheet();
 
-});
+})
+//Checks if migration is needed
+Hooks.once('ready', () => {migrationScript();});
