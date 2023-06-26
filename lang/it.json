@@ -15,17 +15,17 @@
          "knowing":"Sapiente",
          "vigilant":"Vigile",
          "doubt":"Dubbio",
-         "expedience":"Punti Espediente",
+         "expedience":"Espediente",
          "hp":"Punti fermezza",
-         "growth":"Marchi di Crescita",
+         "growth":"Crescita",
          "blood":"Sangue",
          "kin":"Appartenenza",
          "look":"Aspetto",
          "issue":"Problema"
       },
       "statDescription":{
-         "expedienceDesc":"Spendi 2 PE prima di un tiro per ottenere Vantaggi (puoi farlo più volte).",
-         "growthDesc":"Durente Fine Sessione, spendi 5 o 10 PE per marcare 1 o 2 Crescite, rispettivamente.",
+         "expedienceDesc":"Spendi 2 PE prima di un tiro per ottenere Vantaggio.",
+         "growthDesc":"Spendi 5 o 10 PE per marcare Crescite *",
          "hpDesc":"Spendi 1 PF per ridurre il danno di un livello:\nMortale > Serio > Temp > Nessun danno"
       },
       "harmLabel":{
@@ -55,7 +55,7 @@
          "worldAction": "Reazioni del Mondo"
       },
       "equipmentTypeLabel":{
-         "gear": "Equipaggiamento"
+         "gear": "ETICHETTE | EQUIPAGGIAMENTO | ALTRO"
       },
       "npcLabel":{
          "type": "Tipo | Generi",
@@ -67,7 +67,7 @@
          "notes": "Note"
       }
       },
-   "FWRPG-SHEETS":{
+   "FWRPG-SHEET":{
       "Growth":"Crescita",
       "Blood":"Sangue",
       "Kin":"Appartenenza",
