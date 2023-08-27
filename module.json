@@ -17,8 +17,8 @@
    ],
    "version":"0.1.3",
    "compatibility":{
-      "minimum":"10",
-      "verified":"11.302"
+      "minimum":"11",
+      "verified":"11.308"
    },
    "relationships":{
       "systems":[
@@ -27,7 +27,7 @@
             "type":"system",
             "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.1/system.json",
             "compatibility":{
-               "verified":"0.7.1"
+               "verified":"0.7.2"
             }
          }
       ]
