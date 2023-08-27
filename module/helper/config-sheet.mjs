@@ -42,37 +42,14 @@ export const configSheet = async () => {
                }
             },
             "attrTop": {
-               "blood": {
-                  "label": game.i18n.localize("fwrpg.statLabel.blood"),
-                  "description": null,
+               "hard": {
+                  "label": game.i18n.localize("fwrpg.statLabel.hp"),
+                  "description": game.i18n.localize("fwrpg.statDescription.hpDesc"),
                   "customLabel": false,
                   "userLabel": false,
-                  "type": "LongText",
-                  "value": ""
-               },
-               "kin": {
-                  "label": game.i18n.localize("fwrpg.statLabel.kin"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
-                  "value": ""
-               },
-               "issue": {
-                  "label": game.i18n.localize("fwrpg.statLabel.issue"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
-                  "value": ""
-               },
-               "doubt": {
-                  "label": game.i18n.localize("fwrpg.statLabel.doubt"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
-                  "value": ""
+                  "type": "Resource",
+                  "value": 0,
+                  "max": 3
                },
                "xp": {
                   "label": game.i18n.localize("fwrpg.statLabel.expedience"),
@@ -117,7 +94,7 @@ export const configSheet = async () => {
                   ]
                }
             },
-            "attrLeft": {
+            "attrTab": {
                "look": {
                   "label": game.i18n.localize("fwrpg.statLabel.look"),
                   "description": null,
@@ -126,16 +103,41 @@ export const configSheet = async () => {
                   "type": "LongText",
                   "value": ""
                },
-               "hard": {
-                  "label": game.i18n.localize("fwrpg.statLabel.hp"),
-                  "description": game.i18n.localize("fwrpg.statDescription.hpDesc"),
+               "blood": {
+                  "label": game.i18n.localize("fwrpg.statLabel.blood"),
+                  "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "type": "Resource",
-                  "value": 0,
-                  "max": 3
+                  "type": "Text",
+                  "value": ""
                },
-               "tempharm": {
+               "kin": {
+                  "label": game.i18n.localize("fwrpg.statLabel.kin"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "Text",
+                  "value": ""
+               },
+               "issue": {
+                  "label": game.i18n.localize("fwrpg.statLabel.issue"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": ""
+               },
+               "doubt": {
+                  "label": game.i18n.localize("fwrpg.statLabel.doubt"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": ""
+               }
+            },
+            "attrLeft": {
+              "tempharm": {
                   "label": game.i18n.localize("fwrpg.harmLabel.temp"),
                   "description": null,
                   "customLabel": false,
@@ -230,7 +232,7 @@ export const configSheet = async () => {
             },
             "equipmentTypes": {
                "gear": {
-                  "label": game.i18n.localize("fwrpg.equipmentLabel.gear"),
+                  "label": game.i18n.localize("fwrpg.equipmentTypeLabel.gear"),
                   "moves": []
                }
             }
