@@ -73,28 +73,28 @@
                 <div class="sheet-tab">
                   <div class="cell cell--bio">
                     <label class="cell__title">{{localize "FWRPG-SHEETS.Blood"}}</label>
-                {{editor system.attrTop.blood.value target="system.attrTop.blood.value" button=true owner=owner
+                {{editor system.attrTab.blood.value target="system.attrTab.blood.value" button=true owner=owner
                 editable=editable}}
               </div>
               <div class="cell cell--bio">
                 <label class="cell__title">{{localize "FWRPG-SHEETS.Kin"}}</label>
-                {{editor system.attrTop.kin.value target="system.attrTop.kin.value" button=true owner=owner
+                {{editor system.attrTab.kin.value target="system.attrTab.kin.value" button=true owner=owner
                 editable=editable}}
               </div>
               <div class="cell cell--bio">
                 <label class="cell__title">{{localize "FWRPG-SHEETS.Look"}}</label>
-                {{editor system.attrLeft.look target="system.attrLeft.look.value" button=true owner=owner
+                {{editor system.attrTab.look.value target="system.attrTab.look.value" button=true owner=owner
                 editable=editable}}
               </div>
               {{#unless isObserver}}
               <div class="cell cell--bio">
                 <label class="cell__title">{{localize "FWRPG-SHEETS.Issue"}}</label>
-                {{editor system.attrTop.issue target="system.attrTop.issue.value" button=true owner=owner
+                {{editor system.attrTab.issue.value target="system.attrTab.issue.value" button=true owner=owner
                 editable=editable}}
               </div>
               <div class="cell cell--bio">
                 <label class="cell__title">{{localize "FWRPG-SHEETS.Doubt"}}</label>
-                {{editor system.attrTop.look target="system.attrTop.look.value" button=true owner=owner
+                {{editor system.attrTab.doubt.value target="system.attrTab.doubt.value" button=true owner=owner
                 editable=editable}}
               </div>
               {{/unless}}
