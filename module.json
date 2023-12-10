@@ -4,8 +4,8 @@
    "title":"Fantasy World RPG (PbtA)",
    "description":"Fantasy World RPG custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
    "url":"https://github.com/Rangertheman/fwrpg-for-pbta",
-   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.1.5/module.json",
-   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.1.5.zip",
+   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.2.0/module.json",
+   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.2.0.zip",
    "authors":[
       {
          "name":"Krister Persson (Rangertheman)",
@@ -15,9 +15,9 @@
          }
       }
    ],
-   "version":"0.1.5",
+   "version":"0.2.0",
    "compatibility":{
-      "minimum":"10",
+      "minimum":"11",
       "verified":"11.315"
    },
    "relationships":{
@@ -25,9 +25,9 @@
          {
             "id":"pbta",
             "type":"system",
-            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.7.5/system.json",
+            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.8.0/system.json",
             "compatibility":{
-               "verified":"0.7.5"
+               "verified":"0.8.0"
             }
          }
       ]

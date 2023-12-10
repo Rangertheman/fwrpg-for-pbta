@@ -29,45 +29,41 @@
          "hpDesc":"Spend 1 HP to reduce harm by one level:\n Deadly > Serious > Temp > No harm"
       },
       "harmLabel":{
-         "temp": "TEMP HARM",
-         "serious": "SERIOUS HARM",
-         "deadly": "DEADLY HARM",
-
-         "tempEffect0": "You look and feel like a mess: bloody, bruised, and torn up",
-         "tempEffect1": "You lose hold of something important you were carrying or wearing",
-         "tempEffect2": "You lose footing or end up in a problematic position",
-         "tempEffect3": "You are held by something that clutches/ tangles/impedes you",
-         "tempEffect4": "You are out cold, unconscious or powerless until the World says otherwise",
-
-         "seriousEffect0": "An open and vicious gash that, after healing, will leave a permanent scar (make a Tag of this)",
-         "seriousEffect1": "You are actively impeded by pain and injury in doing anything requiring effort or strain",
-         "seriousEffect2": "You broke or mangled one or more of your limbs, which are now inoperable",
-         "seriousEffect3": "One of your eyes or ears is ruined, forever hampering your senses (make a Tag of this)",
-
-         "deadlyEffect0": "Your condition is bad and will develop complications; you will die within a few days",
-         "deadlyEffect1": "Your condition deteriorates rapidly; you will die within a few hours",
-         "deadlyEffect2": "Your heart stops beating; you are dead or will die in a matter of seconds."
+         "temp":"TEMP HARM",
+         "serious":"SERIOUS HARM",
+         "deadly":"DEADLY HARM",
+         "tempEffect0":"You look and feel like a mess: bloody, bruised, and torn up",
+         "tempEffect1":"You lose hold of something important you were carrying or wearing",
+         "tempEffect2":"You lose footing or end up in a problematic position",
+         "tempEffect3":"You are held by something that clutches/ tangles/impedes you",
+         "tempEffect4":"You are out cold, unconscious or powerless until the World says otherwise",
+         "seriousEffect0":"An open and vicious gash that, after healing, will leave a permanent scar (make a Tag of this)",
+         "seriousEffect1":"You are actively impeded by pain and injury in doing anything requiring effort or strain",
+         "seriousEffect2":"You broke or mangled one or more of your limbs, which are now inoperable",
+         "seriousEffect3":"One of your eyes or ears is ruined, forever hampering your senses (make a Tag of this)",
+         "deadlyEffect0":"Your condition is bad and will develop complications; you will die within a few days",
+         "deadlyEffect1":"Your condition deteriorates rapidly; you will die within a few hours",
+         "deadlyEffect2":"Your heart stops beating; you are dead or will die in a matter of seconds."
       },
       "moveTypeLabel":{
-         "commonMoves": "Common Moves",
-         "startingMoves": "Starting Moves",
-         "growthMoves": "Growth Moves",
-         "worldAction": "World Actions"
+         "commonMoves":"Common Moves",
+         "startingMoves":"Starting Moves",
+         "growthMoves":"Growth Moves",
+         "worldAction":"World Actions"
       },
       "equipmentTypeLabel":{
-         "gear": "Equipment"
+         "gear":"Equipment"
       },
       "npcLabel":{
-         "type": "Type | Subtype",
-         "impulse": "Impulse",
-         "cast": "Cast",
-         "connections": "Connections",
-         "reactions": "Reactions",
-         "fate": "Stakes",
-         "notes": "Notes"
+         "type":"Type | Subtype",
+         "impulse":"Impulse",
+         "cast":"Cast",
+         "connections":"Connections",
+         "reactions":"Reactions",
+         "fate":"Stakes",
+         "notes":"Notes"
       }
-      },
-
+   },
    "FWRPG-SHEETS":{
       "Growth":"Growth",
       "Blood":"Blood",
@@ -76,11 +72,33 @@
       "Issue":"Issue",
       "Doubt":"Doubt"
    },
+   "TYPES": {
+      "Actor": {
+        "character": "Protagonist",
+        "npc": "Agent",
+        "other": "Other"
+      },
+      "Item": {
+        "move": "Move",
+        "npcMove": "NPC Move",
+        "equipment": "Equipment",
+        "playbook": "Playbook",
+        "tag": "Tag"
+      }
+    },
    "PBTA":{
       "Description":"Description",
       "Moves":"Moves",
       "Equipment":"Equipment",
-      "Biography": "Biography",
-      "Playbook": "Playbook"
-   }
+      "Biography":"Biography",
+      "Playbook":"Playbook",
+      "Advantage":"Advantage",
+      "Disadvantage":"Disadvantage",
+      "RollMode": "Roll Mode",
+      "Normal":"Normal",
+      "ViewPlaybook":"View playbook",
+      "Name":"Name",
+      "Other":"Other"
+   },
+   "PBTA_OTHER": "Other"
 }

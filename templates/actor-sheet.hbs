@@ -6,12 +6,17 @@
       <header class="sheet-header">
           <div class="sheet-header__fields">
               <input class="input--title" name="name" type="text" value="{{actor.name}}" placeholder="Name"/>
+              <span class="sheet-playbook">
+                <span class="view-playbook" data-playbook="{{system.details.playbook}}" title="{{localize 'PBTA.ViewPlaybook'}}"">
+                  <i class="fas fa-eye"></i>
+                </span>
               <input class="input--title charplaybook" name="system.details.playbook" type="text" value="{{system.details.playbook}}" placeholder="Playbook" list="playbooks"/>
               <datalist id="playbooks">
                 {{#each system.playbooks as |playbook id|}}
-                <option value="{{playbook}}" />
+                  <option value="{{playbook}}">
                 {{/each}}
               </datalist>
+              </span>
              </div>
       </header>
       
@@ -42,18 +47,20 @@
         </section>
 
         <section class="sheet-attributes-top">
-          {{> "systems/pbta/templates/parts/sheet-attributes.html" attrs=system.attrTop group="attrTop" class="attributes-top" owner=owner editable=editable}}
+          {{~> "systems/pbta/templates/parts/sheet-attributes.html" attrs=system.attrTop group="attrTop" class="attributes-top" owner=owner editable=editable~}}
         </section>
       </section>
 
       <section class="sheet-bottom">
         {{!-- Sidebar --}}
+        {{#if (objLen system.attrLeft)}}
         <section class="sheet-look">
           <div class="cell cell--aesthetics">
             {{> "systems/pbta/templates/parts/sheet-attributes.html" attrs=system.attrLeft group="attrLeft" class="attributes-left" owner=owner editable=editable}}
           </div>
 
                  </section>
+        {{/if}}
 
         {{!-- Main --}}
         <section class="sheet-main">
@@ -107,7 +114,7 @@
 
                   <section class="sheet-notifications">
                     {{#if system.isToken}}
-                    <div class="cell__title warning small-text">Moves cannot be rearranged while this token is not linked to an actor.</div>
+                    <div class="cell__title warning small-text">{{localize "PBTA.Warnings.UnlinkedToken.Moves"}}</div>
                     {{/if}}
                   </section>
 
@@ -125,9 +132,9 @@
                     <div class="cell cell--forward">
                         <label class="cell__title">{{localize "PBTA.Forward"}}</label>
                         <div class="cell__wrapper">
-                          <button class="resource-control resource-decrease" data-action="decrease" data-attr="resources.forward.value">-</button>
+                          <button type="button" class="resource-control resource-decrease" data-action="decrease" data-attr="resources.forward.value" >-</button>
                           <input type="number" name="system.resources.forward.value" value="{{numberFormat system.resources.forward.value decimals=0 sign=false}}" data-dtype="Number"/>
-                          <button class="resource-control resource-increase" data-action="increase" data-attr="resources.forward.value">+</button>
+                          <button type="button" class="resource-control resource-increase" data-action="increase" data-attr="resources.forward.value">+</button>
                         </div>
                       </div>
                     {{/if}}
@@ -136,16 +143,16 @@
                       <div class="cell cell--ongoing">
                         <label class="cell__title">{{localize "PBTA.Ongoing"}}</label>
                         <div class="cell__wrapper">
-                          <button class="resource-control resource-decrease" data-action="decrease" data-attr="resources.ongoing.value">-</button>
+                          <button type="button" class="resource-control resource-decrease" data-action="decrease" data-attr="resources.ongoing.value">-</button>
                           <input type="number" name="system.resources.ongoing.value" value="{{numberFormat system.resources.ongoing.value decimals=0 sign=false}}" data-dtype="Number"/>
-                          <button class="resource-control resource-increase" data-action="increase" data-attr="resources.ongoing.value">+</button>
+                          <button type="button" class="resource-control resource-increase" data-action="increase" data-attr="resources.ongoing.value">+</button>
                         </div>
                       </div>
                     {{/if}}
 
                     {{#if (not sheetSettings.hideRollMode)}}
                       <div class="cell cell--roll-mode flexrow">
-                        <label class="cell__title">{{localize "Roll Mode"}}</label>
+                        <label class="cell__title">{{localize "PBTA.RollMode"}}</label>
                         {{radioBoxes 'flags.pbta.rollMode' rollModes checked=flags.pbta.rollMode localize=true}}
                       </div>
                     {{/if}}
@@ -176,10 +183,9 @@
 
               {{!-- Owned Equipment Tab --}}
               <div class="tab equipment" data-group="primary" data-tab="equipment">
-                {{!-- <div class="cell cell--equipment cell--group"> --}}
                   <section class="sheet-notifications" style="margin-top:10px;">
                     {{#if system.isToken}}
-                    <div class="cell__title warning small-text">Equipment cannot be rearranged while this token is not linked to an actor.</div>
+                    <div class="cell__title warning small-text">{{localize "PBTA.Warnings.UnlinkedToken.Equipment"}}</div>
                     {{/if}}
                   </section>
                  
@@ -222,7 +228,6 @@
                       </ol>
                     </div>
                   {{/each}}
-                
               </div>
 
           </section>
