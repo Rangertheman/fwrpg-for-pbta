@@ -98,6 +98,28 @@
   margin: 8px 0 0;
 }
 
+.pbta.sheet .cell--tempharm label.flexrow {
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.pbta.sheet .cell--seriousharm label.flexrow {
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.pbta.sheet .cell--deadlyharm label.flexrow {
+  flex-wrap: nowrap; 
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.pbta.sheet .cell--attributes-left .flexcol {
+  gap: 10px;
+}
+
 .pbta.sheet .tabs a.item {
   align-self: center;
   font: 2.1rem 'RunyTunes';
