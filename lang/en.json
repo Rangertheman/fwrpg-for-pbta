@@ -72,20 +72,20 @@
       "Issue":"Issue",
       "Doubt":"Doubt"
    },
-   "TYPES": {
-      "Actor": {
-        "character": "Protagonist",
-        "npc": "Agent",
-        "other": "Other"
+   "TYPES":{
+      "Actor":{
+         "character":"Protagonist",
+         "npc":"Agent",
+         "other":"Other"
       },
-      "Item": {
-        "move": "Move",
-        "npcMove": "NPC Move",
-        "equipment": "Equipment",
-        "playbook": "Playbook",
-        "tag": "Tag"
+      "Item":{
+         "move":"Move",
+         "npcMove":"NPC Move",
+         "equipment":"Equipment",
+         "playbook":"Playbook",
+         "tag":"Tag"
       }
-    },
+   },
    "PBTA":{
       "Description":"Description",
       "Moves":"Moves",
@@ -94,11 +94,16 @@
       "Playbook":"Playbook",
       "Advantage":"Advantage",
       "Disadvantage":"Disadvantage",
-      "RollMode": "Roll Mode",
+      "RollMode":"Roll Mode",
       "Normal":"Normal",
       "ViewPlaybook":"View playbook",
       "Name":"Name",
-      "Other":"Other"
+      "Other":"Other",
+      "Dialog":{
+         "Ask1":"Choose a stat for this move.",
+         "ChooseConditions":"Choose all conditional modifiers that apply:",
+         "Prompt1":"Choose the number of +OPTIONS, +COMPONENTS or +WATCH added for this move."
+      }
    },
-   "PBTA_OTHER": "Other"
+   "PBTA_OTHER":"Other"
 }
