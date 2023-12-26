@@ -94,45 +94,25 @@ export const configSheet = async () => {
                   ]
                }
             },
-            "attrTab": {
+            "details": {
                "look": {
                   "label": game.i18n.localize("fwrpg.statLabel.look"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
                   "value": ""
                },
                "blood": {
                   "label": game.i18n.localize("fwrpg.statLabel.blood"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "Text",
                   "value": ""
                },
                "kin": {
                   "label": game.i18n.localize("fwrpg.statLabel.kin"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "Text",
                   "value": ""
                },
                "issue": {
                   "label": game.i18n.localize("fwrpg.statLabel.issue"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
                   "value": ""
                },
                "doubt": {
                   "label": game.i18n.localize("fwrpg.statLabel.doubt"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "type": "LongText",
                   "value": ""
                }
             },
@@ -308,6 +288,19 @@ export const configSheet = async () => {
       }
    }
 
+   game.pbta.migrations.sheetConfig = (source) => {
+	   if (source.attrTab) {
+         delete source.details.biography;
+		   Object.entries(source.attrTab).forEach(([key, value]) => {
+			   source.details[key] = {
+				   label: game.i18n.localize(`fwrpg.statLabel.${key}`),
+				   value: value.value
+			   }
+		   });
+         delete source.attrTab;
+	   }
+   }
+
    // check if users wants to override settings; if not, hide all PbtA sheet options
    let overrideSettings = await game.settings.get('fwrpg-for-pbta', 'settings-override');
 
@@ -319,5 +312,4 @@ export const configSheet = async () => {
       await game.settings.set('pbta', 'hideRollMode', false);
       await game.settings.set('pbta', 'hideUses', true);
    }
-
 }
