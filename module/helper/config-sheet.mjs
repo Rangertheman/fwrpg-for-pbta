@@ -288,7 +288,7 @@ export const configSheet = async () => {
       }
    }
 
-   game.pbta.migrations.sheetConfig = (source) => {
+   game.pbta.sheetMigration = (source) => {
 	   if (source.attrTab) {
          delete source.details.biography;
 		   Object.entries(source.attrTab).forEach(([key, value]) => {
