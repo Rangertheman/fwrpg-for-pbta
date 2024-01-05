@@ -289,16 +289,16 @@ export const configSheet = async () => {
    }
 
    game.pbta.sheetMigration = (source) => {
-	   if (source.attrTab) {
+      if (source.attrTab) {
          delete source.details.biography;
-		   Object.entries(source.attrTab).forEach(([key, value]) => {
-			   source.details[key] = {
-				   label: game.i18n.localize(`fwrpg.statLabel.${key}`),
-				   value: value.value
-			   }
-		   });
+         Object.entries(source.attrTab).forEach(([key, value]) => {
+            source.details[key] = {
+               label: game.i18n.localize(`fwrpg.statLabel.${key}`),
+               value: value.value
+            }
+         });
          delete source.attrTab;
-	   }
+      }
    }
 
    // check if users wants to override settings; if not, hide all PbtA sheet options
