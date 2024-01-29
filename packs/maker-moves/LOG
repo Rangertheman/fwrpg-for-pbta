@@ -1,0 +1,8 @@
+2024/01/29-21:28:15.985 1fec Recovering log #8
+2024/01/29-21:28:15.991 1fec Delete type=0 #8
+2024/01/29-21:28:15.991 1fec Delete type=3 #6
+2024/01/29-21:38:24.454 3744 Level-0 table #13: started
+2024/01/29-21:38:24.454 3744 Level-0 table #13: 0 bytes OK
+2024/01/29-21:38:24.457 3744 Delete type=0 #11
+2024/01/29-21:38:24.464 3744 Manual compaction at level-0 from '!items!1Ej6GWMTvWTrEEKi' @ 72057594037927935 : 1 .. '!items!naUuMTbkZkhr9GoA' @ 0 : 0; will stop at (end)
+2024/01/29-21:38:24.464 3744 Manual compaction at level-1 from '!items!1Ej6GWMTvWTrEEKi' @ 72057594037927935 : 1 .. '!items!naUuMTbkZkhr9GoA' @ 0 : 0; will stop at (end)
