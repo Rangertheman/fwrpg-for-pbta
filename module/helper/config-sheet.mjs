@@ -199,15 +199,18 @@ export const configSheet = async () => {
             "moveTypes": {
                "comon": {
                   "label": game.i18n.localize("fwrpg.moveTypeLabel.commonMoves"),
-                  "moves": []
+                  "moves": [],
+                  "creation": true
                },
                "start": {
                   "label": game.i18n.localize("fwrpg.moveTypeLabel.startingMoves"),
-                  "moves": []
+                  "moves": [],
+                  "playbook": true
                },
                "growth": {
                   "label": game.i18n.localize("fwrpg.moveTypeLabel.growthMoves"),
-                  "moves": []
+                  "moves": [],
+                  "playbook": true
                }
             },
             "equipmentTypes": {
