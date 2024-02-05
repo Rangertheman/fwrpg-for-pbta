@@ -30,6 +30,7 @@
 .pbta.sheet .sheet-resources .cell--roll-mode {
   border: solid 2px #8e2231;
   border-radius: 10px;
+  display: flex;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat, .pbta.sheet .tabs .item {
