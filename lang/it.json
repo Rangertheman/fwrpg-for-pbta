@@ -28,6 +28,13 @@
          "growthDesc":"Durente Fine Sessione, spendi 5 o 10 PE per marcare 1 o 2 Crescite, rispettivamente.",
          "hpDesc":"Spendi 1 PF per ridurre il danno di un livello:\nMortale > Serio > Temp > Nessun danno"
       },
+      "growthOption": {
+         "headerLabel": "Opzioni di Crescita",
+         "growth0": "+1 a una Stat; max +3",
+         "growth1": "Prendi una mossa dalla tua classe",
+         "growth2": "Prendi una mossa dalla tua classe o da un'altra classe",
+         "growth3": "Aumenta i tuoi PF massimi di +1"
+      },
       "harmLabel":{
          "temp":"DAMNI TEMPORANEI",
          "serious":"DAMNI SERI",
@@ -53,6 +60,13 @@
       },
       "equipmentTypeLabel":{
          "gear":"Equipaggiamento"
+      },
+      "eqipmentTracker":{
+         "trackerLabel": "Scorte",
+         "trackerDesc0": "Esaurite",
+         "trackerDesc1": "Scarse",
+         "trackerDesc2": "Sufficienti",
+         "trackerDesc3": "Abbondanti"
       },
       "npcLabel":{
          "type":"Tipo | Generi",

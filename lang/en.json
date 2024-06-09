@@ -17,7 +17,7 @@
          "doubt":"Doubt",
          "expedience":"Expedience Points",
          "hp":"Hardiness Points",
-         "growth":"Growth",
+         "growth":"Growth Points",
          "blood":"Blood",
          "kin":"Kin",
          "look":"Look",
@@ -27,6 +27,13 @@
          "expedienceDesc":"Spend 2 EPs before a roll to gain Advantage (you can do it more than once).",
          "growthDesc":"During End of Session, spend 5 or 10 EP to mark 1 or 2 Growths, respectively.",
          "hpDesc":"Spend 1 HP to reduce harm by one level:\n Deadly > Serious > Temp > No harm"
+      },
+      "growthOption": {
+         "headerLabel": "Growth Options",
+         "growth0": "Increase a stat by +1; max +3",
+         "growth1": "Select a Growth move from your Class list",
+         "growth2": "Select a Growth move from your own or a different Class list",
+         "growth3": "Increase your current\n and max HPs by +1"
       },
       "harmLabel":{
          "temp":"TEMP HARM",
@@ -53,6 +60,13 @@
       },
       "equipmentTypeLabel":{
          "gear":"Equipment"
+      },
+      "eqipmentTracker":{
+         "trackerLabel": "Supplies",
+         "trackerDesc0": "Ran Out",
+         "trackerDesc1": "Few",
+         "trackerDesc2": "Enough",
+         "trackerDesc3": "Plenty"
       },
       "npcLabel":{
          "type":"Type | Subtype",

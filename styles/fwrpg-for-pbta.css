@@ -99,6 +99,14 @@
   align-items: flex-start;
 }
 
+.pbta.sheet .checkboxes {
+  text-align:center;
+}
+
+.pbta.sheet .checkboxes input{
+  margin: 0 5px 0 30px;
+}
+
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {
   font: 2.4rem 'RunyTunes';
   height: 40px;

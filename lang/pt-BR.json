@@ -1,0 +1,123 @@
+{
+   "fwrpg": {
+      "Settings": {
+         "Title": "Substituir Seleções de Configurações",
+         "Hint": "O módulo RPG Fantasy World oculta automaticamente todas as opções de ficha PbtA (fórmula, em diante, contínuo, etc.), exceto o modo de rolagem. Se você quiser fazer suas próprias seleções, por favor, marque esta opção."
+      },
+      "rollResult": {
+         "success": "Grande Benefício!",
+         "partial": "Pequeno Benefício",
+         "miss": "Revés"
+      },
+      "statLabel": {
+         "daring": "Ousadia",
+         "intense": "Intensidade",
+         "knowing": "Conhecimento",
+         "vigilant": "Vigilância",
+         "doubt": "Dúvida",
+         "expedience": "Pontos de Experiência",
+         "hp": "Pontos de Robustez",
+         "growth": "Crescimento",
+         "blood": "Sangue",
+         "kin": "Parentesco",
+         "look": "Aparência",
+         "issue": "Questão"
+      },
+      "statDescription": {
+         "expedienceDesc": "Gaste 2 PE antes de uma rolagem para ganhar Vantagem (você pode fazer isso mais de uma vez).",
+         "growthDesc": "Durante o Fim da Sessão, gaste 5 ou 10 PE para marcar 1 ou 2 Crescimentos, respectivamente.",
+         "hpDesc": "Gaste 1 PR para reduzir o dano em um nível: \n Mortal > Grave > Temporário > Sem dano"
+      },
+      "growthOption": {
+         "headerLabel": "Growth Options",
+         "growth0": "Increase a stat by +1; max +3",
+         "growth1": "Select a Growth move from your Class list",
+         "growth2": "Select a Growth move from your own or a different Class list",
+         "growth3": "Increase your current\n and max HPs by +1"
+      },
+      "harmLabel": {
+         "temp": "DANO TEMPORÁRIO",
+         "serious": "DANO GRAVE",
+         "deadly": "DANO MORTAL",
+         "tempEffect0": "Você parece e se sente um desastre: ensanguentado, machucado e rasgado.",
+         "tempEffect1": "Você perde algo importante que estava carregando ou vestindo.",
+         "tempEffect2": "Você perde o equilíbrio ou acaba em uma posição problemática.",
+         "tempEffect3": "Você é agarrado por algo que te segura/enrosca/impede.",
+         "tempEffect4": "Você está desacordado, inconsciente ou impotente até que o Mestre diga o contrário.",
+         "seriousEffect0": "Um corte aberto e violento que, após cicatrizar, deixará uma cicatriz permanente (faça uma Marca disso).",
+         "seriousEffect1": "Você está ativamente impedido por dor e ferimentos ao fazer qualquer coisa que exija esforço ou tensão.",
+         "seriousEffect2": "Você quebrou ou mutilou um ou mais de seus membros, que agora estão inoperantes.",
+         "seriousEffect3": "Um de seus olhos ou ouvidos está arruinado, prejudicando permanentemente seus sentidos (faça uma Marca disso).",
+         "deadlyEffect0": "Sua condição está ruim e desenvolverá complicações; você morrerá dentro de alguns dias.",
+         "deadlyEffect1": "Sua condição se deteriora rapidamente; você morrerá dentro de algumas horas.",
+         "deadlyEffect2": "Seu coração para de bater; você está morto ou morrerá em questão de segundos."
+      },
+      "moveTypeLabel": {
+         "commonMoves": "Ações Comuns",
+         "startingMoves": "Ações Iniciais",
+         "growthMoves": "Ações de Crescimento",
+         "worldAction": "Ações do Mundo"
+      },
+      "equipmentTypeLabel": {
+         "gear": "Equipamento"
+      },
+      "eqipmentTracker":{
+         "trackerLabel": "Supplies",
+         "trackerDesc0": "Ran Out",
+         "trackerDesc1": "Few",
+         "trackerDesc2": "Enough",
+         "trackerDesc3": "Plenty"
+      },
+      "npcLabel": {
+         "type": "Tipo | Subtipo",
+         "impulse": "Impulso",
+         "cast": "Elenco",
+         "connections": "Conexões",
+         "reactions": "Reações",
+         "fate": "Destinos",
+         "notes": "Notas"
+      }
+   },
+   "FWRPG-SHEETS": {
+      "Growth": "Crescimento",
+      "Blood": "Sangue",
+      "Kin": "Parentesco",
+      "Look": "Aparência",
+      "Issue": "Questão",
+      "Doubt": "Dúvida"
+   },
+   "TYPES": {
+      "Actor": {
+         "character": "Protagonista",
+         "npc": "Agente",
+         "other": "Outro"
+      },
+      "Item": {
+         "move": "Ação",
+         "npcMove": "Ação de NPC",
+         "equipment": "Equipamento",
+         "playbook": "Livro de Jogo",
+         "tag": "Marca"
+      }
+   },
+   "PBTA": {
+      "Description": "Descrição",
+      "Moves": "Ações",
+      "Equipment": "Equipamento",
+      "Biography": "Biografia",
+      "Playbook": "Livro de Jogo",
+      "Advantage": "Vantagem",
+      "Disadvantage": "Desvantagem",
+      "RollMode": "Modo de Rolagem",
+      "Normal": "Normal",
+      "ViewPlaybook": "Ver livro de jogo",
+      "Name": "Nome",
+      "Other": "Outro",
+      "Dialog": {
+         "Ask1": "Escolha um atributo para esta ação.",
+         "ChooseConditions": "Escolha todos os modificadores condicionais que se aplicam:",
+         "Prompt1": "Escolha o número de +OPÇÕES, +COMPONENTES ou +OBSERVAÇÕES adicionadas para esta ação."
+      }
+   },
+   "PBTA_OTHER": "Outro"
+}

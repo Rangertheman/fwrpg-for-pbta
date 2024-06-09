@@ -4,8 +4,8 @@
    "title":"Fantasy World RPG (PbtA)",
    "description":"Fantasy World RPG custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
    "url":"https://github.com/Rangertheman/fwrpg-for-pbta",
-   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.3.4/module.json",
-   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.3.4.zip",
+   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.4.0/module.json",
+   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.4.0.zip",
    "authors":[
       {
          "name":"Krister Persson (Rangertheman)",
@@ -15,10 +15,10 @@
          }
       }
    ],
-   "version":"0.3.4",
+   "version":"0.4.0",
    "compatibility":{
       "minimum":"11",
-      "verified":"12.325"
+      "verified":"12"
    },
    "relationships":{
       "systems":[
@@ -27,8 +27,7 @@
             "type":"system",
             "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.9.7/system.json",
             "compatibility":{
-               "minimum":"0.9.7",
-               "verified":"0.9.8"
+               "minimum":"0.9.7"
             }
          }
       ]
@@ -55,7 +54,15 @@
          "flags":{
             
          }
-      }
+      },
+      {
+         "lang": "pt-BR",
+         "name": "Português (Brasil)",
+         "path": "lang/pt-BR.json",
+         "flags":{
+            
+         }
+         }
    ],
    "packs":[
       {
