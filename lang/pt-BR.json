@@ -29,11 +29,11 @@
          "hpDesc": "Gaste 1 PR para reduzir o dano em um nível: \n Mortal > Grave > Temporário > Sem dano"
       },
       "growthOption": {
-         "headerLabel": "Growth Options",
-         "growth0": "Increase a stat by +1; max +3",
-         "growth1": "Select a Growth move from your Class list",
-         "growth2": "Select a Growth move from your own or a different Class list",
-         "growth3": "Increase your current\n and max HPs by +1"
+         "headerLabel": "Opções de Crescimento",
+         "growth0": "Aumente um atributo em +1; máx. +3",
+         "growth1": "Selecione um movimento de Crescimento da sua lista de Classe",
+         "growth2": "Selecione um movimento de Crescimento da sua própria lista ou de uma Classe diferente",
+         "growth3": "Aumente seus HPs atuais\n e máximos em +1"
       },
       "harmLabel": {
          "temp": "DANO TEMPORÁRIO",
@@ -61,12 +61,12 @@
       "equipmentTypeLabel": {
          "gear": "Equipamento"
       },
-      "eqipmentTracker":{
-         "trackerLabel": "Supplies",
-         "trackerDesc0": "Ran Out",
-         "trackerDesc1": "Few",
-         "trackerDesc2": "Enough",
-         "trackerDesc3": "Plenty"
+      "equipmentTracker": {
+         "trackerLabel": "Suprimentos",
+         "trackerDesc0": "Esgotado",
+         "trackerDesc1": "Poucos",
+         "trackerDesc2": "Suficientes",
+         "trackerDesc3": "Abundantes"
       },
       "npcLabel": {
          "type": "Tipo | Subtipo",
