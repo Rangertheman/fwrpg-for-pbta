@@ -53,7 +53,11 @@
          "deadlyEffect2":"Il tuo cuore smette di battere; sei morto o morirai nel giro di secondi."
       },
       "moveTypeLabel":{
-         "commonMoves":"Mosse Communi",
+         "actionMoves":"Mosse D'Azione",
+         "adventuringMoves":"Mosse D'Avventura",
+         "infoMoves":"Mosse D'Informazione",
+         "specialMoves":"Mosse Speciali",
+         "violenceMoves":"Mosse Di Violenza",
          "startingMoves":"Mosse Iniziali",
          "growthMoves":"Mosse di Crescita",
          "worldAction":"Reazioni del Mondo"

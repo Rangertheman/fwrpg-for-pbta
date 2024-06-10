@@ -92,11 +92,12 @@
 }
 
 .pbta.sheet .cell--attributes-left .cell__checkboxes.flexcol {
-  row-gap: 10px;
+  row-gap: 10px; 
+     
 }
 
 .pbta.sheet .cell--attributes-left .cell__checkboxes label.flexrow:has(.attr-list) {
-  align-items: flex-start;
+  align-items: flex-start;  
 }
 
 .pbta.sheet .checkboxes {

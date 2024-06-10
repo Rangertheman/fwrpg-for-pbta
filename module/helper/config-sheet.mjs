@@ -249,8 +249,28 @@ export const configSheet = async () => {
                }
             },
             "moveTypes": {
-               "comon": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.commonMoves"),
+              "action": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.actionMoves"),
+                  "moves": [],
+                  "creation": true
+               },
+               "adventuring": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.adventuringMoves"),
+                  "moves": [],
+                  "creation": true
+               },
+               "info": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.infoMoves"),
+                  "moves": [],
+                  "creation": true
+               },
+               "special": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.specialMoves"),
+                  "moves": [],
+                  "creation": true
+               },
+               "violence": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.violenceMoves"),
                   "moves": [],
                   "creation": true
                },

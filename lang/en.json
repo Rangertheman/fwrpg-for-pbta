@@ -53,7 +53,11 @@
          "deadlyEffect2":"Your heart stops beating; you are dead or will die in a matter of seconds."
       },
       "moveTypeLabel":{
-         "commonMoves":"Common Moves",
+         "actionMoves":"Action Moves",
+         "adventuringMoves":"Adventuring Moves",
+         "infoMoves":"Info Moves",
+         "specialMoves":"Special Moves",
+         "violenceMoves":"Violence Moves",
          "startingMoves":"Starting Moves",
          "growthMoves":"Growth Moves",
          "worldAction":"World Actions"

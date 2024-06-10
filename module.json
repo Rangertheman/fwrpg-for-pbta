@@ -17,7 +17,7 @@
    ],
    "version":"0.4.0",
    "compatibility":{
-      "minimum":"11",
+      "minimum":"12",
       "verified":"12"
    },
    "relationships":{
@@ -25,9 +25,9 @@
          {
             "id":"pbta",
             "type":"system",
-            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/0.9.7/system.json",
+            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/1.0.7/system.json",
             "compatibility":{
-               "minimum":"0.9.7"
+               "minimum":"1.0.7"
             }
          }
       ]
