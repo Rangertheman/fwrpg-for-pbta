@@ -92,20 +92,16 @@
 }
 
 .pbta.sheet .cell--attributes-left .cell__checkboxes.flexcol {
-  row-gap: 10px; 
-     
+  row-gap: 10px;      
 }
 
 .pbta.sheet .cell--attributes-left .cell__checkboxes label.flexrow:has(.attr-list) {
   align-items: flex-start;  
-}
+  }
 
-.pbta.sheet .checkboxes {
-  text-align:center;
-}
-
-.pbta.sheet .checkboxes input{
-  margin: 0 5px 0 30px;
+.pbta.sheet .cell--attributes-left .cell__checkboxes input[type="checkbox"]:has(+ input),
+.pbta.sheet .cell--attributes-left .cell__checkboxes input[type="checkbox"] + input {
+  margin: 3px 4px 3px 1px;
 }
 
 .pbta.sheet .sheet-attributes .cell--stats .stat .cell__title  {

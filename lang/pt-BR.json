@@ -53,11 +53,11 @@
          "deadlyEffect2": "Seu coração para de bater; você está morto ou morrerá em questão de segundos."
       },
       "moveTypeLabel": {
-         "actionMoves":"Action Moves",
-         "adventuringMoves":"Adventuring Moves",
-         "infoMoves":"Info Moves",
-         "specialMoves":"Special Moves",
-         "violenceMoves":"Violence Moves",
+         "actionMoves":"Ação",
+         "adventuringMoves":"Aventura",
+         "infoMoves":"Informação",
+         "specialMoves":"Especial",
+         "violenceMoves":"Violência",
          "startingMoves": "Ações Iniciais",
          "growthMoves": "Ações de Crescimento",
          "worldAction": "Ações do Mundo"
