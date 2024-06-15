@@ -4,8 +4,8 @@
    "title":"Fantasy World RPG (PbtA)",
    "description":"Fantasy World RPG custom sheet and compendium module, to be used with Asacolips' Powered by the Apocalypse system",
    "url":"https://github.com/Rangertheman/fwrpg-for-pbta",
-   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.4.0/module.json",
-   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.4.0.zip",
+   "manifest":"https://raw.githubusercontent.com/Rangertheman/fwrpg-for-pbta/0.4.1/module.json",
+   "download":"https://github.com/Rangertheman/fwrpg-for-pbta/archive/refs/tags/0.4.1.zip",
    "authors":[
       {
          "name":"Krister Persson (Rangertheman)",
@@ -15,7 +15,7 @@
          }
       }
    ],
-   "version":"0.4.0",
+   "version":"0.4.1",
    "compatibility":{
       "minimum":"12",
       "verified":"12"
@@ -25,7 +25,7 @@
          {
             "id":"pbta",
             "type":"system",
-            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/1.0.7/system.json",
+            "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/latest/system.json",
             "compatibility":{
                "minimum":"1.0.7"
             }
@@ -56,13 +56,13 @@
          }
       },
       {
-         "lang": "pt-BR",
-         "name": "Português (Brasil)",
-         "path": "lang/pt-BR.json",
+         "lang":"pt-BR",
+         "name":"Português (Brasil)",
+         "path":"lang/pt-BR.json",
          "flags":{
             
          }
-         }
+      }
    ],
    "packs":[
       {
@@ -229,6 +229,33 @@
          "flags":{
             
          }
+      }
+   ],
+   "packFolders":[
+      {
+         "name":"Fantasy World RPG",
+         "sorting":"a",
+         "color":"#5987bb",
+         "packs":[
+            "common-moves",
+            "class-descriptions",
+            "captain-moves",
+            "knight-moves",
+            "maker-moves",
+            "occultist-moves",
+            "priest-moves",
+            "troubadour-moves",
+            "scoundrel-moves",
+            "veteran-moves",
+            "wayfarer-moves",
+            "wildcaller-moves",            
+            "fantasy-world-srd",
+            "fantasy-world-srd-ita",
+            "fantasy-world-background"
+         ],
+         "folders":[
+            
+         ]
       }
    ]
 }

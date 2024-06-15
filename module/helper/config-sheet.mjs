@@ -41,12 +41,13 @@ export const configSheet = async () => {
                   "value": 0
                }
             },
-            "attrTop": {
+            "attributes": {
                "growth": {
                   "label": game.i18n.localize("fwrpg.statLabel.growth"),
                   "description": game.i18n.localize("fwrpg.statDescription.growthDesc"),
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "Xp",
                   "value": 0,
                   "max": 10,
@@ -68,6 +69,7 @@ export const configSheet = async () => {
                   "description": game.i18n.localize("fwrpg.statDescription.expedienceDesc"),
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "Xp",
                   "value": 0,
                   "max": 10,
@@ -89,6 +91,7 @@ export const configSheet = async () => {
                   "description": game.i18n.localize("fwrpg.statDescription.hpDesc"),
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "Resource",
                   "value": 0,
                   "max": 3
@@ -98,6 +101,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customlabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "ListOne",
                  "condition": false,
                   "options": {
@@ -148,6 +152,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
                   "options": {
@@ -174,6 +179,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
                   "options": {
@@ -204,6 +210,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
                   "options": {
@@ -230,6 +237,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
                   "options": {
