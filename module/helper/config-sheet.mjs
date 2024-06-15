@@ -301,12 +301,13 @@ export const configSheet = async () => {
             }
          },
          "npc": {
-            "attrTop": {
+            "attributes": {
                "type": {
                   "label": game.i18n.localize("fwrpg.npcLabel.type"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "LongText",
                   "value": ""
                },
@@ -315,6 +316,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "LongText",
                   "value": ""
                },
@@ -323,6 +325,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "LongText",
                   "value": ""
                },
@@ -331,6 +334,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "top",
                   "type": "LongText",
                   "value": ""
                }
@@ -341,6 +345,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "LongText",
                   "value": ""
                },
@@ -349,6 +354,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "LongText",
                   "value": ""
                },
@@ -357,6 +363,7 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
+                  "position": "left",
                   "type": "LongText",
                   "value": ""
                }
