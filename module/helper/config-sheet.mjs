@@ -42,13 +42,49 @@ export const configSheet = async () => {
                }
             },
             "attributes": {
-               "growth": {
-                  "label": game.i18n.localize("fwrpg.statLabel.growth"),
-                  "description": game.i18n.localize("fwrpg.statDescription.growthDesc"),
+               "blood": {
+                  "label": game.i18n.localize("fwrpg.statLabel.blood"),
+                  "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
+                  "type": "LongText",
+                  "value": "",
+                  "position": "Top"
+               },
+               "kin": {
+                  "label": game.i18n.localize("fwrpg.statLabel.kin"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": "",
+                  "position": "Top"
+               },
+               "issue": {
+                  "label": game.i18n.localize("fwrpg.statLabel.issue"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": "",
+                  "position": "Top"
+               },
+               "doubt": {
+                  "label": game.i18n.localize("fwrpg.statLabel.doubt"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": "",
+                  "position": "Top"
+               },
+               "xp": {
+                  "label": game.i18n.localize("fwrpg.statLabel.expedience"),
+                  "description": game.i18n.localize("fwrpg.statDescription.expedienceDesc"),
+                  "customLabel": false,
+                  "userLabel": false,
                   "type": "Xp",
+                  "position": "Top",
                   "value": 0,
                   "max": 10,
                   "steps": [
@@ -64,13 +100,13 @@ export const configSheet = async () => {
                      false
                   ]
                },
-              "xp": {
-                  "label": game.i18n.localize("fwrpg.statLabel.expedience"),
-                  "description": game.i18n.localize("fwrpg.statDescription.expedienceDesc"),
+               "growth": {
+                  "label": game.i18n.localize("fwrpg.statLabel.growth"),
+                  "description": game.i18n.localize("fwrpg.statDescription.growthDesc"),
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "Xp",
+                  "position": "Top",
                   "value": 0,
                   "max": 10,
                   "steps": [
@@ -85,103 +121,34 @@ export const configSheet = async () => {
                      false,
                      false
                   ]
+               },
+               "look": {
+                  "label": game.i18n.localize("fwrpg.statLabel.look"),
+                  "description": null,
+                  "customLabel": false,
+                  "userLabel": false,
+                  "type": "LongText",
+                  "value": "",
+                  "position": "Left"
                },
                "hard": {
                   "label": game.i18n.localize("fwrpg.statLabel.hp"),
                   "description": game.i18n.localize("fwrpg.statDescription.hpDesc"),
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "Resource",
                   "value": 0,
-                  "max": 3
-               },
-               "eqipmentTracker": {
-                  "label": game.i18n.localize("fwrpg.eqipmentTracker.trackerLabel"),
-                  "description": null,
-                  "customlabel": false,
-                  "userLabel": false,
-                  "position": "top",
-                  "type": "ListOne",
-                 "condition": false,
-                  "options": {
-                     "0": {
-                        "label": game.i18n.localize("fwrpg.eqipmentTracker.trackerDesc0"),
-                        "value:": false
-                     },
-                     "1": {
-                        "label": game.i18n.localize("fwrpg.eqipmentTracker.trackerDesc1"),
-                        "value:": false
-                     },
-                     "2": {
-                        "label": game.i18n.localize("fwrpg.eqipmentTracker.trackerDesc2"),
-                        "value:": false
-                     },
-                     "3": {
-                        "label": game.i18n.localize("fwrpg.eqipmentTracker.trackerDesc3"),
-                        "value:": false
-                     }
-                  }
-               }
-            },
-            "details": {
-               "look": {
-                  "label": game.i18n.localize("fwrpg.statLabel.look"),
-                  "value": ""
-               },
-               "blood": {
-                  "label": game.i18n.localize("fwrpg.statLabel.blood"),
-                  "value": ""
-               },
-               "kin": {
-                  "label": game.i18n.localize("fwrpg.statLabel.kin"),
-                  "value": ""
-               },
-               "issue": {
-                  "label": game.i18n.localize("fwrpg.statLabel.issue"),
-                  "value": ""
-               },
-               "doubt": {
-                  "label": game.i18n.localize("fwrpg.statLabel.doubt"),
-                  "value": ""
-               }
-            },
-            "attrLeft": {
-              "growthOptions": {
-                  "label": game.i18n.localize("fwrpg.growthOption.headerLabel"),
-                  "description": null,
-                  "customLabel": false,
-                  "userLabel": false,
-                  "position": "left",
-                  "type": "ListMany",
-                  "condition": false,
-                  "options": {
-                     "0": {
-                        "label": game.i18n.localize("fwrpg.growthOption.growth0"),
-                        "values": [false, false, false]
-                     },
-                     "1": {
-                        "label": game.i18n.localize("fwrpg.growthOption.growth1"),
-                        "values": [false, false, false]
-                     },
-                     "2": {
-                        "label": game.i18n.localize("fwrpg.growthOption.growth2"),
-                        "values": [false, false]
-                     },
-                     "3": {
-                        "label": game.i18n.localize("fwrpg.growthOption.growth3"),
-                        "values": [false, false]
-                     }
-                  }
+                  "max": 3,
+                  "position": "Left"
                },
                "tempharm": {
                   "label": game.i18n.localize("fwrpg.harmLabel.temp"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
+                  "position": "Left",
                   "options": {
                      "0": {
                         "label": game.i18n.localize("fwrpg.harmLabel.tempEffect0"),
@@ -210,9 +177,9 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
+                  "position": "Left",
                   "options": {
                      "0": {
                         "label": game.i18n.localize("fwrpg.harmLabel.seriousEffect0"),
@@ -237,9 +204,9 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "ListMany",
                   "condition": false,
+                  "position": "Left",
                   "options": {
                      "0": {
                         "label": game.i18n.localize("fwrpg.harmLabel.deadlyEffect0"),
@@ -257,40 +224,17 @@ export const configSheet = async () => {
                }
             },
             "moveTypes": {
-              "action": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.actionMoves"),
-                  "moves": [],
-                  "creation": true
-               },
-               "adventuring": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.adventuringMoves"),
-                  "moves": [],
-                  "creation": true
-               },
-               "info": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.infoMoves"),
-                  "moves": [],
-                  "creation": true
-               },
-               "special": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.specialMoves"),
-                  "moves": [],
-                  "creation": true
-               },
-               "violence": {
-                  "label": game.i18n.localize("fwrpg.moveTypeLabel.violenceMoves"),
-                  "moves": [],
-                  "creation": true
+               "comon": {
+                  "label": game.i18n.localize("fwrpg.moveTypeLabel.commonMoves"),
+                  "moves": []
                },
                "start": {
                   "label": game.i18n.localize("fwrpg.moveTypeLabel.startingMoves"),
-                  "moves": [],
-                  "playbook": true
+                  "moves": []
                },
                "growth": {
                   "label": game.i18n.localize("fwrpg.moveTypeLabel.growthMoves"),
-                  "moves": [],
-                  "playbook": true
+                  "moves": []
                }
             },
             "equipmentTypes": {
@@ -307,65 +251,63 @@ export const configSheet = async () => {
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Top"
                },
                "impulse": {
                   "label": game.i18n.localize("fwrpg.npcLabel.impulse"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Top"
                },
                "cast": {
                   "label": game.i18n.localize("fwrpg.npcLabel.cast"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Top"
                },
                "connections": {
                   "label": game.i18n.localize("fwrpg.npcLabel.connections"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "top",
                   "type": "LongText",
-                  "value": ""
-               }
-            },
-            "attrLeft": {
+                  "value": "",
+                  "position": "Top"
+               },
                "reactions": {
                   "label": game.i18n.localize("fwrpg.npcLabel.reactions"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Left"
                },
                "stakes": {
                   "label": game.i18n.localize("fwrpg.npcLabel.fate"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Left"
                },
                "notes": {
                   "label": game.i18n.localize("fwrpg.npcLabel.notes"),
                   "description": null,
                   "customLabel": false,
                   "userLabel": false,
-                  "position": "left",
                   "type": "LongText",
-                  "value": ""
+                  "value": "",
+                  "position": "Left"
                }
             },
             "moveTypes": {
@@ -378,19 +320,6 @@ export const configSheet = async () => {
       }
    }
 
-   game.pbta.sheetMigration = (source) => {
-      if (source.attrTab) {
-         delete source.details.biography;
-         Object.entries(source.attrTab).forEach(([key, value]) => {
-            source.details[key] = {
-               label: game.i18n.localize(`fwrpg.statLabel.${key}`),
-               value: value.value
-            }
-         });
-         delete source.attrTab;
-      }
-   }
-
    // check if users wants to override settings; if not, hide all PbtA sheet options
    let overrideSettings = await game.settings.get('fwrpg-for-pbta', 'settings-override');
 
@@ -399,8 +328,8 @@ export const configSheet = async () => {
       await game.settings.set('pbta', 'hideRollFormula', true);
       await game.settings.set('pbta', 'hideForward', true);
       await game.settings.set('pbta', 'hideOngoing', true);
-      await game.settings.set('pbta', 'hideHold', true);
       await game.settings.set('pbta', 'hideRollMode', false);
       await game.settings.set('pbta', 'hideUses', true);
    }
+
 }
