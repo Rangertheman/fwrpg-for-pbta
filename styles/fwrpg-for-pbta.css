@@ -261,3 +261,51 @@ span.attr-icon.attr-rollable.rollable:hover .fa-dice-d6 {
 .pbta.sheet .cell--attr-nextlevel label.cell__title {
   font-size: 1.8rem;
 }
+/* --- Precisionjustering av rubrikstorlek och sektionsavstånd --- */
+
+/* 1. Huvudbehållaren för varje fält */
+.pbta.sheet .tab.description .custom-attr-wrapper .attr-description-block {
+    display: block !important;
+    padding: 0 !important;
+    /* Justerat osynligt gap till 25px enligt önskemål */
+    margin: 0 0 20px 0 !important; 
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. RUBRIKEN */
+.pbta.sheet .tab.description .custom-attr-wrapper .cell__title {
+    background-color: transparent !important;
+    margin: 0 0 4px 0 !important; 
+    padding: 0 0 3px 0 !important;
+    border: none !important;
+    border-bottom: 2px solid #8e2231 !important; 
+    position: relative;
+    z-index: 2;
+    display: block !important;
+    font-family: var(--font-primary, "Signika", sans-serif) !important;
+    /* Justerad storlek till 1.25rem för perfekt matchning */
+    font-size: 1.25rem !important; 
+    font-weight: bold !important;
+    color: black !important;
+    text-shadow: none !important;
+    text-transform: none !important;
+}
+/* --- Specifik färgjustering för huvudattribut (Stats) --- */
+
+/* Måltavla: Rubriken (Daring, Intense, etc.) */
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
+    color: white !important;
+}
+
+/* Måltavla: Värdet/Siffran i cirkeln/rutan */
+.pbta.sheet .sheet-attributes .cell--stats .stat .stat-value,
+.pbta.sheet .sheet-attributes .cell--stats .stat input {
+    color: white !important;
+}
+
+/* Säkerställ att text-shadow bibehålls för läsbarhet mot den röda bakgrunden */
+.pbta.sheet .sheet-attributes .cell--stats .stat :is(.cell__title, .stat-value) {
+    text-shadow: 0 0 5px #063c4f !important;
+}

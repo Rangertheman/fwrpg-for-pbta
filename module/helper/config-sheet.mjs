@@ -333,3 +333,32 @@ export const configSheet = async () => {
    }
 
 }
+Hooks.on("renderPbtaActorSheet", (app, html, data) => {
+   const descriptionTab = html.find('.tab.description');
+   
+   // 2. Lägg till .cell--look i listan, placerad mellan .cell--doubt och .cell--biography
+   const fieldsToMove = [
+      '.cell--blood', 
+      '.cell--kin', 
+      '.cell--issue', 
+      '.cell--doubt', 
+      '.cell--look',      // <--- Ny placering
+      '.cell--biography'
+   ];
+   
+   if (descriptionTab.length > 0) {
+      let customWrapper = descriptionTab.find('.custom-attr-wrapper');
+      if (customWrapper.length === 0) {
+         descriptionTab.prepend('<div class="custom-attr-wrapper"></div>');
+         customWrapper = descriptionTab.find('.custom-attr-wrapper');
+      }
+
+      fieldsToMove.forEach(selector => {
+         const element = html.find(`.cell--attributes-top ${selector}, .cell--attributes-left ${selector}`);
+         if (element.length > 0) {
+            element.addClass('attr-description-block');
+            customWrapper.append(element);
+         }
+      });
+     }
+});

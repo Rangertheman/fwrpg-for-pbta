@@ -15,10 +15,10 @@
          }
       }
    ],
-   "version":"0.4.4",
+   "version":"0.5.0",
    "compatibility":{
-      "minimum":"12",
-      "verified":"13"
+      "minimum":"13",
+      "verified":"14"
    },
    "relationships":{
       "systems":[
@@ -27,8 +27,8 @@
             "type":"system",
             "manifest":"https://asacolips-artifacts.s3.amazonaws.com/pbta/latest/system.json",
             "compatibility":{
-               "minimum":"1.0.7",
-               "verified":"1.0.22"
+               "minimum":"1.0.20",
+               "verified":"1.0.23"
             }
          }
       ]
