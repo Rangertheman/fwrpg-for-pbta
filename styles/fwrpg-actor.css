@@ -1,0 +1,661 @@
+/* ========================================= */
+/* FANTASY WORLD - UPDATED STYLE SHEET       */
+/* ========================================= */
+
+/* ==========================================================================
+   1. GRUNDLÄGGANDE FOUNTRY-MODIFIERING & GLOBALA DROPDOWNS
+   ========================================================================== */
+.pbta.sheet.actor section.window-content {
+    background-image: url("../styles/img/paper-nordwood.jpg");
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c1ae97; 
+    color: #1a1a1a;
+    font-family: 'Signika', sans-serif;
+}
+
+/* NY FIX: Ändrar ALLA dropdown-menyer på Actor-kortet till mjuk äggvit */
+.pbta.sheet select,
+.pbta.sheet select option {
+    background-color: #fdfbf7 !important; 
+    color: #1a1a1a !important;
+}
+
+/* 2. TYPOGRAFI & RUBRIKER */
+.pbta.sheet .cell__title, 
+.pbta.sheet .tabs .item,
+.pbta.sheet .node-title {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold !important;
+    font-size: 1.3rem !important; /* Standardstorlek för rubriker */
+}
+
+/* SPECIFIK JUSTERING AV ATTRIBUT-STORLEKAR (ÖVRE RADEN) */
+
+/* Tvinga standardstorlek på alla titlar i Attributes Top */
+.pbta.sheet .sheet-attributes-top .cell .cell__title {
+    font-size: 1.3rem !important;
+    visibility: visible !important;
+}
+
+/* Expedience & Growth Points - Större storlek på titlar i övre raden */
+.pbta.sheet .sheet-attributes-top .cell--xp .xp-wrapper span.cell__title,
+.pbta.sheet .sheet-attributes-top .cell--growth .xp-wrapper span.cell__title,
+.pbta.sheet .sheet-attributes-top .cell--expedience .cell__title,
+.pbta.sheet .sheet-attributes-top .cell--growthpoints .cell__title {
+    font-size: 1.5rem !important;
+}
+
+/* SPECIFIK JUSTERING AV ATTRIBUT I SIDOFÄLTET (VÄNSTERKANTEN) */
+
+/* 1. RUBRIKER: Alla rubriker i Left - Centrerade, rätt storlek och på en rad */
+.pbta.sheet .cell--attributes-left .cell label.cell__title,
+.pbta.sheet .cell--attributes-left .cell span.cell__title,
+.pbta.sheet .cell--attributes-left .cell .cell__title {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    font-size: 1.0rem !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 4px 0 !important; /* Minimal marginal under rubriken */
+    padding: 0 !important;
+}
+
+/* 2. MÄTARNA: Centrera rutor/cirklar och eliminera allt dolt utrymme */
+.pbta.sheet .cell--attributes-left .cell .resource-inputs,
+.pbta.sheet .cell--attributes-left .cell .clock-row {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 auto 4px auto !important; /* Minimal marginal under mätarna innan texten startar */
+    padding: 0 !important;
+    gap: 6px !important;
+}
+
+/* 3. TEXTBEHÅLLARNA: Nollställ alla dolda marginaler och Flexbox-gap på själva boxarna */
+.pbta.sheet .cell--attributes-left .cell .cell__clock-label,
+.pbta.sheet .cell--attributes-left .cell .clock-label,
+.pbta.sheet .cell--attributes-left .cell .cell__description,
+.pbta.sheet .cell--attributes-left .cell .cell__description--attr {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    font-weight: normal !important; /* Tar bort fetstilen på behållarnivå */
+}
+
+/* 4. DEN KIRURGISKA TRÄFFEN: Applicera ENBART utglesning och radbrytning på själva textinnehållet */
+.pbta.sheet .cell--attributes-left .cell .cell__clock-label,
+.pbta.sheet .cell--attributes-left .cell .clock-label,
+.pbta.sheet .cell--attributes-left .cell .cell__description {
+    font-weight: normal !important;
+    line-height: 1.45 !important;       /* Det perfekta, luftiga radavståndet */
+    white-space: pre-line !important;  /* Tvingar fram radbrytningar inuti texten */
+    text-align: left !important;       /* Löptexten förblir snyggt vänsterställd */
+}
+
+/* 5. HARDINESS ENBART: Dämpa den vanliga beskrivningen så den inte blir för gles */
+.pbta.sheet .cell--attributes-left .cell .cell__description--attr,
+.pbta.sheet .cell--attributes-left .cell .cell__description--attr p {
+    font-weight: normal !important;
+    line-height: 1.25 !important;      /* Tätare och mer samlat radavstånd för Hardiness */
+    white-space: normal !important;    /* Hardiness behöver inte pre-line eftersom den har riktiga p-taggar */
+    margin: 4px 0 0 0 !important;      /* Minimal marginal i toppen */
+    padding: 0 !important;
+    text-align: left !important;
+}
+
+/* ========================================================================== */
+/* KIRURGISK UTGLESNING: HARM-FÄLT (TEMP, SERIOUS, DEADLY HARM)                */
+/* ========================================================================== */
+
+/* 1. Säkra huvudbehållaren under rubriken så den inte expanderar i bredd */
+.pbta.sheet .cell--attributes-left .cell--tempharm .cell__checkboxes,
+.pbta.sheet .cell--attributes-left .cell--seriousharm .cell__checkboxes,
+.pbta.sheet .cell--attributes-left .cell--deadlyharm .cell__checkboxes {
+    display: block !important;           /* Tvingar standard block-layout utifrån */
+    margin-top: 10px !important;         /* Luft under "Temp Harm"-rubriken */
+    padding: 0 !important;
+}
+
+/* 2. Stycka upp och glesa ut varje skaderad (kryssruta + text) */
+.pbta.sheet .cell--attributes-left .cell--tempharm .cell__checkboxes > label,
+.pbta.sheet .cell--attributes-left .cell--seriousharm .cell__checkboxes > label,
+.pbta.sheet .cell--attributes-left .cell--deadlyharm .cell__checkboxes > label {
+    display: flex !important;            /* Håller ihop kryssruta och text på samma rad */
+    align-items: flex-start !important;  /* Centrerar kryssrutan mot den första textraden */
+    gap: 8px !important;                 /* Kontrollerat avstånd mellan boxen och texten */
+    
+    margin-bottom: 12px !important;      /* Avståndet mellan varje skada */
+    margin-top: 0 !important;
+    padding: 0 !important;
+    
+    font-weight: normal !important;      /* Tar bort den dolda fetstilen */
+    line-height: 1.4 !important;         /* Ger ett perfekt radavstånd inuti beskrivningen */
+    white-space: normal !important;      /* Tillåter texten att radbryta naturligt */
+    text-align: left !important;         /* Vänsterställd löptext */
+    font-size: 0.9rem !important;        /* Gör texten lite mer elegant inuti sidofältet */
+}
+
+/* 3. Säkerställ att checkboxen behåller sin naturliga storlek och inte sträcks ut */
+.pbta.sheet .cell--attributes-left .cell--list-many .cell__checkboxes > label input[type="checkbox"] {
+    flex-shrink: 0 !important;           /* Hindrar Flexbox från att platta till checkboxen */
+    margin: 2px 0 0 0 !important;        /* Finjustering i höjdled mot texten */
+}
+
+/* 4. CELLER & BEHÅLLARE (LAYOUT) */
+.pbta.sheet .sheet-attributes-top,
+.pbta.sheet .sheet-attributes-left {
+    padding: 0;
+}
+
+/* Ta bort ytterramen runt hela Left-sidofältet för att undvika dubbla linjer */
+.pbta.sheet .cell.cell--aesthetics {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.pbta.sheet .cell {
+    border: 2px solid #8e2231;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.4); 
+    padding: 12px !important;            /* Höjt för mer andrum inuti rutorna */
+    margin-bottom: 10px !important;      /* Separerar rutorna mer */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pbta.sheet .cell__description {
+    font-size: 0.9rem;
+    line-height: 1.35 !important;        /* Ökat radavstånd för bättre läsbarhet */
+    margin: 8px 0 4px 0 !important;      /* Mer luft mellan rubriken och beskrivningen */
+    padding: 4px 6px !important;         /* Skyddar texten från att ligga tryckt mot kanterna */
+    color: #2a2a2a;                      /* Ökad kontrast mot pappersbakgrunden */
+}
+
+/* ========================================================================== */
+/* 3. STATS-RUTNÄT (2x2, Inuti knappen, Symmetrisk höjd & Fixerad bredd)      */
+/* ========================================================================== */
+
+/* Huvudbehållaren för hela stats-sektionen */
+.pbta.sheet .sheet-attributes .cell--stats {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;                /* Kontrollerat avstånd mellan knapparna */
+    justify-content: space-between !important; /* Sprider ut knapparna jämnt mot ytterkanterna */
+    flex: 1 !important;
+    padding: 0 !important;
+    
+    /* KIRURGISK DETALJ: Skapar ett elegant tomrum till bildrutan till vänster */
+    margin-left: 15px !important;       
+}
+
+/* Själva rutan (Knappen) för varje stat */
+.pbta.sheet .sheet-attributes .cell--stats .stat {
+    background: #8e2231 !important;
+    border: 1px solid #5a121a !important;
+    border-radius: 12px !important;      /* Snyggt rundade hörn */
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    
+    /* Tvingar ett strikt 2x2 mönster med något smalare bredd för att kompensera för vänsteravståndet */
+    flex: 0 0 45% !important; 
+    width: 45% !important;
+    max-width: 45% !important;
+    
+    margin: 0 !important; 
+    position: relative !important;       /* Tillåter oss att förankra inputfältet inuti knappen */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    
+    /* Ökad padding över och under för att ge önskad höjd inuti knappen */
+    padding: 12px 14px !important;       
+    box-sizing: border-box !important;
+    overflow: visible !important;        /* Säkrar att ingenting klipps bort */
+}
+
+/* Etiketten (Texten och tärningsikonen som utgör den klickbara ytan) */
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title {
+    color: white !important;
+    font-size: 1.1rem !important;
+    margin: 0 !important;
+    border: none !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    
+    /* Gör att den klickbara ytan expanderar över hela knappen */
+    width: 100% !important;
+    padding-right: 45px !important;     /* Reserverar utrymme på högersidan så texten inte krockar med siffran */
+    box-sizing: border-box !important;
+    cursor: pointer;
+}
+
+/* Säkra tärningsikonen inuti knappen */
+.pbta.sheet .sheet-attributes .cell--stats .stat .cell__title .stat-icon {
+    display: inline-block !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* VÄRDET (Inputfältet) - Tvingas in i knappen och görs synligt */
+.pbta.sheet .sheet-attributes .cell--stats .stat input.stat-value {
+    position: absolute !important;       /* Bryter ut siffran från flex-knuffen */
+    right: 14px !important;              /* Låser den till knappens högerkant */
+    top: 50% !important;                 /* Centrerar vertikalt */
+    transform: translateY(-50%) !important; 
+    
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 1.4rem !important;
+    background: transparent !important;
+    border: none !important;
+    
+    width: 35px !important;              /* Kompakt fast bredd för siffran (+ eller -) */
+    min-width: 35px !important;
+    text-align: right !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    height: auto !important; 
+    box-shadow: none !important;
+    
+    pointer-events: auto !important;     /* Gör att man fortfarande kan klicka och ändra värdet manuellt */
+    z-index: 2 !important;
+}
+
+/* ==========================================================================
+   5. DESCRIPTION-TABBEN (PERFEKT RUTNÄT, STÖRRE TEXT & INGEN BIOGRAPHY)
+   ========================================================================== */
+
+/* Huvudstrukturen för rutnätet (2 kolumner) */
+.pbta.sheet .tab.description .custom-attr-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; 
+    gap: 15px !important;
+    padding: 10px 0 !important;
+}
+
+/* Varje enskild fältbox (Blood, Kin, Issue, Doubt) */
+.pbta.sheet .tab.description .custom-attr-wrapper .cell {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    margin: 0 !important;
+    padding: 0 !important; /* Rensar bort dolda padding-avstånd runt fältet */
+}
+
+/* Rubrikerna (Blood, Kin, etc.) */
+.pbta.sheet .tab.description .custom-attr-wrapper .cell__title {
+    border-bottom: 2px solid #8e2231 !important; 
+    color: black !important;
+    margin-bottom: 8px !important;
+    font-size: 1.4rem !important; 
+}
+
+/* Look sträcker sig över båda kolumnerna i botten */
+.pbta.sheet .tab.description .cell--look {
+    grid-column: span 2 !important;
+    margin-top: 10px !important;
+}
+
+/* STRÄNGT FÖRBJUDET: Ser till att Biography förblir helt raderat från skärmen */
+.pbta.sheet .tab.description .cell--biography,
+.pbta.sheet .tab.description .biography,
+.pbta.sheet.actor .tab.description .cell--biography {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   A. VISNINGSLÄGE (SPARAD TEXT) - HELT RENT UTAN RAMAR ELLER SKUGGOR
+   -------------------------------------------------------------------------- */
+.pbta.sheet .tab.description .editor,
+.pbta.sheet .tab.description .editor-container,
+.pbta.sheet .tab.description .prosemirror,
+.pbta.sheet .tab.description .ProseMirror,
+.pbta.sheet .tab.description .tox-tinymce,
+.pbta.sheet .tab.description .editor-content {
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* --------------------------------------------------------------------------
+   B. AKTIVT REDIGERINGSLÄGE - TYDLIG MÖRKRÖD RAM VID KLICK
+   -------------------------------------------------------------------------- */
+.pbta.sheet .tab.description .editor-container:focus-within,
+.pbta.sheet .tab.description .ProseMirror-focused {
+    border: 2px solid #8e2231 !important;           /* Tydlig mörkröd ram när fältet är aktivt */
+    border-radius: 6px !important;
+    box-shadow: none !important;                     /* Utrotar dolda standardskuggor */
+    background: rgba(255, 255, 255, 0.6) !important;    /* Mjuk vit bakgrund vid inmatning */
+    padding: 6px !important;                         /* Ger lite andrum inuti ramen man skriver i */
+}
+
+/* --------------------------------------------------------------------------
+   C. TEXTJUSTERINGAR (TEXTSTORLEK + 4PX / 2PX EXTRA FRÅN FÖRRA RÄTTNINGEN)
+   -------------------------------------------------------------------------- */
+.pbta.sheet .tab.description .editor-content,
+.pbta.sheet .tab.description .ProseMirror,
+.pbta.sheet .tab.description .ProseMirror p,
+.pbta.sheet .tab.description input[type="text"] {
+    font-size: 1.25rem !important; /* Stor, ren och jättelättläst text */
+    color: #1a1a1a !important;
+}
+
+/* --------------------------------------------------------------------------
+   D. PROSEMIRROR VERKTYGSFÄLT (BEHÅLLER RADBRYTNING OCH INTEGRITET)
+   -------------------------------------------------------------------------- */
+.pbta.sheet.actor .tab.description menu.editor-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;       
+    flex-flow: row wrap !important;   
+    justify-content: flex-start !important; 
+    gap: 6px 6px !important; 
+    line-height: normal !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    height: auto !important;          
+    min-height: unset !important;
+    max-height: unset !important;
+    overflow: visible !important;
+}
+
+.pbta.sheet.actor .tab.description menu.editor-menu li {
+    flex: 0 0 auto !important; 
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+.pbta.sheet.actor .tab.description menu.editor-menu li.right,
+.pbta.sheet.actor .tab.description menu.editor-menu li.source-code-edit {
+    margin-left: unset !important; 
+}
+
+/* 6. FLIKAR (Tabs) */
+.pbta.sheet .tabs {
+    border-bottom: 2px solid #8e2231;
+    margin-bottom: 10px;
+}
+
+.pbta.sheet .tabs .item {
+    background: #4a4a4a;
+    color: white !important;
+    border-radius: 4px 4px 0 0;
+    margin-right: 2px;
+    padding: 5px 15px;
+}
+
+.pbta.sheet .tabs .item.active {
+    background: #8e2231 !important;
+    border: none;
+}
+
+/* 7. SCROLLBARS */
+.pbta.sheet ::-webkit-scrollbar-thumb {
+    background: #8e2231;
+}
+
+.pbta.sheet ::-webkit-scrollbar-track {
+    background: #d1c1b0;
+}
+
+/* ========================================================================== */
+/* LAYOUT & DESIGN: ATTRIBUTES TOP (ÖVRE ATTRIBUTRADEN)                       */
+/* ========================================================================== */
+
+/* 1. Huvudbehållaren (Håller ihop hela top-sektionen) */
+.pbta.sheet .sheet-attributes-top {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;     /* Centrerar alla ingående boxar vertikalt */
+    justify-content: space-between !important;
+    padding: 0 !important;              /* Nollställd så vi inte skjuter ramen utåt */
+    margin: 0 0 10px 0 !important;      /* Luft ner till nästa sektion på bladet */
+}
+
+/* 2. Grundregler för alla celler i övre raden - Röd ram och padding-kontroll */
+.pbta.sheet .sheet-attributes-top .cell {
+    border: 2px solid #8e2231 !important; /* Den snygga mörkröda ramen */
+    background: rgba(255, 255, 255, 0.4) !important;
+    margin: 0 !important;                
+    box-sizing: border-box !important;   /* Garanterar att rutan INTE expanderar utåt när vi ökar padding */
+}
+
+/* 3. Tvinga rubrikerna i det övre attributfältet att centreras perfekt */
+.pbta.sheet .sheet-attributes-top .cell .cell__title {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* 4. Flytta radioknapparna uppåt i höjdled för att frigöra luft till bottenramen */
+.pbta.sheet .sheet-attributes-top .cell--expedience .cell__clock,
+.pbta.sheet .sheet-attributes-top .cell--expedience .cell__track,
+.pbta.sheet .sheet-attributes-top .cell--growthpoints .cell__clock,
+.pbta.sheet .sheet-attributes-top .cell--growthpoints .cell__track,
+.pbta.sheet .sheet-attributes-top .cell--xp .cell__clock,
+.pbta.sheet .sheet-attributes-top .cell--xp .cell__track,
+.pbta.sheet .sheet-attributes-top .cell--growth .cell__clock,
+.pbta.sheet .sheet-attributes-top .cell--growth .cell__track {
+    transform: translateY(-2px) !important; /* Håller cirklarna stabila */
+}
+
+/* 5. KIRURGISK ÖKNING AV LUFT INNANFÖR RAMEN (Övre & undre padding i boxarna) */
+.pbta.sheet .sheet-attributes-top .cell--expedience,
+.pbta.sheet .sheet-attributes-top .cell--growthpoints,
+.pbta.sheet .sheet-attributes-top .cell--xp,
+.pbta.sheet .sheet-attributes-top .cell--growth {
+    padding-top: 16px !important;       /* Mer luft under den övre röda ramen */
+    padding-bottom: 16px !important;    /* Mer luft ovanför den undre röda ramen */
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* ========================================================================== */
+/* LAYOUT & DESIGN: MOVES-TABBEN (ORDER, BREDD & RADAVSTÅND)                  */
+/* ========================================================================== */
+
+/* 1. Aktivera flex-raden för resurserna och skapa avstånd ner till Common Moves */
+.pbta.sheet .tab.moves .sheet-resources {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;                 /* Avståndet mellan rutorna på samma rad */
+    align-items: stretch !important;     /* Håller rutorna lika höga */
+    margin-bottom: 15px !important;      /* Ger extra luft ner till Common Moves */
+    padding-bottom: 5px !important;
+}
+
+/* 2. Sätt ROLL MODE som första element och ge den 2/3 bredd */
+.pbta.sheet .tab.moves .sheet-resources .cell--roll-mode {
+    order: 1 !important;                 /* Tvingar den att ritas ut först */
+    flex: 0 0 calc(66.66% - 10px) !important;
+    width: calc(66.66% - 10px) !important;
+    margin: 0 !important;
+}
+
+/* 3. Sätt HOLD som andra element och ge den 1/3 bredd */
+.pbta.sheet .tab.moves .sheet-resources .cell--hold {
+    order: 2 !important;                 /* Tvingar den att ritas ut efter Roll Mode */
+    flex: 0 0 calc(33.33% - 5px) !important;
+    width: calc(33.33% - 5px) !important;
+    margin: 0 !important;
+}
+
+/* ========================================================================== */
+/* LAYOUT & DESIGN: ACTOR HEADER (NAMN, PLAYBOOK & ADVANCEMENTS)              */
+/* ========================================================================== */
+
+/* 1. Grundregler för alla text- och valfälten i headern */
+.pbta.sheet .sheet-header .input--title {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;
+    color: #1a1a1a !important;
+    
+    border: 2px solid #8e2231 !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    
+    padding: 6px 12px !important;
+    box-sizing: border-box !important;
+    height: 38px !important;
+    opacity: 1 !important; /* Motverkar blekhet */
+}
+
+/* 2. Sammanlänka Playbook-väljaren och ögat */
+.pbta.sheet .sheet-header .sheet-playbook {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    opacity: 1 !important;
+}
+
+/* Ögats behållare - Tvingad till 100% färgstyrka */
+.pbta.sheet .sheet-header .view-playbook {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 38px !important;
+    padding: 0 10px !important;
+    
+    border: 2px solid #8e2231 !important;
+    border-right: none !important;
+    border-radius: 6px 0 0 6px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    
+    color: #8e2231 !important;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    
+    /* KIRURGISK FIX MOT BLEKHET */
+    opacity: 1 !important; 
+    filter: none !important;
+}
+
+/* Tvinga själva ikonen (ögat) till maximal färgstyrka */
+.pbta.sheet .sheet-header .view-playbook i {
+    color: #8e2231 !important;
+    opacity: 1 !important;
+}
+
+/* Playbook-dropdown - Själva rutan */
+.pbta.sheet .sheet-header .charplaybook {
+    border: 2px solid #8e2231 !important;
+    border-radius: 0 6px 6px 0 !important;
+    flex: 1 !important;
+    opacity: 1 !important;
+    background-color: #fdfbf7 !important; /* Tvingar rutan till äggvit */
+    color: #1a1a1a !important;
+}
+
+/* KLOCKREN FIX: Tvingar alternativen inuti listan till äggvit och slår ut guldfärgen */
+.pbta.sheet .sheet-header select.charplaybook option,
+.pbta.sheet .sheet-header .charplaybook option,
+.pbta.sheet.actor select.charplaybook option {
+    background: #fdfbf7 !important;
+    background-color: #fdfbf7 !important; /* Dubbelsäkrat för äggvit */
+    color: #1a1a1a !important;
+    font-family: 'Signika', sans-serif !important;
+    text-transform: none !important;
+}
+
+.pbta.sheet .sheet-header .charplaybook option {
+    background-color: #c1ae97 !important;
+    color: #1a1a1a !important;
+    font-family: 'Signika', sans-serif !important;
+    text-transform: none;
+}
+
+/* 3. ADVANCEMENTS-TEXTRUTA */
+.pbta.sheet .sheet-header input.input--title.advancement {
+    flex: 0 0 60px !important;
+    width: 60px !important;
+    min-width: 60px !important;
+    margin-left: 10px !important;
+    
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #1a1a1a !important;
+    font-family: 'Signika', sans-serif !important;
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    padding: 6px 0 !important;
+    
+    border: 2px solid #8e2231 !important;
+    border-right: none !important;
+    border-radius: 6px 0 0 6px !important; 
+    opacity: 1 !important;
+}
+
+/* Säkra att webbläsarens dolda standardpilar döljs */
+.pbta.sheet .sheet-header input.input--title.advancement::-webkit-outer-spin-button,
+.pbta.sheet .sheet-header input.input--title.advancement::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+.pbta.sheet .sheet-header input.input--title.advancement {
+    -moz-appearance: textfield !important;
+}
+
+/* 4. EXTERNA PILEN - Tvingad till 100% opacitet och solid färg */
+.pbta.sheet .sheet-header div.advancement {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    height: 38px !important;
+    width: 32px !important;
+    flex: 0 0 32px !important;
+    
+    background: #8e2231 !important;
+    border: 2px solid #8e2231 !important;
+    border-radius: 0 6px 6px 0 !important;
+    
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    
+    /* KIRURGISK FIX MOT BLEKHET */
+    opacity: 1 !important; 
+    filter: none !important;
+}
+
+/* Ikonen inuti pil-diven */
+.pbta.sheet .sheet-header div.advancement i.fa-arrow-up {
+    color: #ffffff !important;
+    font-size: 0.9rem !important;
+    opacity: 1 !important;
+}
+
+/* Hover-effekt */
+.pbta.sheet .sheet-header div.advancement:hover {
+    background: #a12a3a !important;
+    border-color: #a12a3a !important;
+    opacity: 1 !important;
+}
+
+/* 5. Focus-effekter */
+.pbta.sheet .sheet-header .input--title:focus,
+.pbta.sheet .sheet-header .view-playbook:hover {
+    background: rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 0 4px rgba(142, 34, 49, 0.4) !important;
+    outline: none !important;
+}

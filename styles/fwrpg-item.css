@@ -1,0 +1,461 @@
+/* ==========================================================================
+   FANTASY WORLD - ITEM SHEET STYLE SHEET (PROPORTIONER KORRIGERADE)
+   ========================================================================== */
+
+/* 1. GRUNDLÄGGANDE BAKGRUND & FONTS */
+.pbta.sheet.item section.window-content {
+    background-image: url("../styles/img/paper-nordwood.jpg") !important;
+    background-size: cover !important;
+    background-attachment: local !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-color: #c1ae97 !important; 
+    color: #1a1a1a !important;
+    font-family: 'Signika', sans-serif !important;
+    padding: 15px 18px !important; 
+}
+
+/* Säkrar att ALLA element i hela item-kortet räknar ramar och padding INÅT */
+.pbta.sheet.item *,
+.pbta.sheet.item *::before,
+.pbta.sheet.item *::after {
+    box-sizing: border-box !important;
+}
+
+/* 2. TYPOGRAFI & RUBRIKER */
+.pbta.sheet.item .cell__title,
+.pbta.sheet.item .sheet-header h1.itemname input,
+.pbta.sheet.item .tabs .item {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    font-weight: bold !important;
+}
+
+/* ==========================================================================
+   3. ITEM HEADER (Isolerade röda ramar runt Ikon och Namn)
+   ========================================================================== */
+.pbta.sheet.item .sheet-header {
+    margin: 0 0 18px 0 !important; 
+    padding: 0 0 5px 0 !important; 
+    border-bottom: none !important; 
+    
+    display: flex !important;
+    flex-direction: row !important; 
+    flex-wrap: nowrap !important;   
+    align-items: center !important;
+    gap: 14px !important;
+    background: transparent !important;
+    width: 100% !important;
+}
+
+/* KORRIGERAD: Storleken ökad från 64px till 74px för en något större ikon */
+.pbta.sheet.item .sheet-header .cell--image {
+    flex: 0 0 74px !important;  /* Ökad bredd för större ikon */
+    height: 74px !important;     /* Ökad höjd för större ikon */
+    margin: 0 !important;
+    padding: 8px !important;    /* Behåller den perfekta paddingen intakt */
+    display: block !important;
+    
+    border: 2px solid #8e2231 !important; 
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Anpassar själva bilden inuti behållaren */
+.pbta.sheet.item .sheet-header img.profile-img {
+    border: none !important; 
+    border-radius: 4px !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* RAM RUNT NAMNET (Behållaren för textfältet) */
+.pbta.sheet.item .sheet-header .header-fields {
+    flex: 1 1 auto !important; 
+    min-width: 0 !important;   
+    margin: 0 !important;
+    padding: 3px !important; 
+    
+    border: 2px solid #8e2231 !important; 
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
+.pbta.sheet.item .sheet-header h1.charname {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    border: none !important;
+}
+
+/* Textfältet inuti den röda namnrutan */
+.pbta.sheet.item .sheet-header h1.charname input {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0.5px !important;
+    font-weight: bold !important;
+    font-size: 1.6rem !important;
+    color: #1a1a1a !important;
+    
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 3px 10px !important; 
+    margin: 0 !important;
+    
+    height: 44px !important; 
+    width: 100% !important; 
+    display: block !important;
+    box-shadow: none !important;
+}
+
+.pbta.sheet.item .sheet-header h1.charname input:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* ==========================================================================
+   4. TABBAR (Korrigerad höjd - Trycks inte längre ihop)
+   ========================================================================== */
+.pbta.sheet.item nav.sheet-navigation.sheet-tabs,
+.pbta.sheet.item .tabs {
+    border: none !important;
+    border-bottom: 2px solid #8e2231 !important; /* Linjen ligger stabilt under tabbarna */
+    margin: 10px 0 15px 0 !important;
+    padding: 0 !important; 
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-end !important; 
+    background: transparent !important;
+    box-shadow: none !important;
+    
+    /* EFFEKTIV FIX: Borttaget height-lås så typsnittet får plats utan att tryckas ihop */
+    height: auto !important; 
+    overflow: visible !important;
+}
+
+.pbta.sheet.item .tabs .item {
+    font-family: "Almendra SC", "Almendra", serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    font-weight: bold !important;
+    font-size: 1.3rem !important;
+    
+    /* Inaktiva flikar: Mörkgrå med vit text */
+    background: #4a4a4a !important; 
+    color: #ffffff !important;
+    
+    border: none !important;
+    border-radius: 4px 4px 0 0 !important;
+    margin-right: 4px !important;
+    
+    /* Håller flikarna perfekt kant-i-kant mot linjen utan att strypa höjden */
+    margin-bottom: -2px !important; 
+    padding: 6px 18px !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    height: auto !important;
+}
+
+.pbta.sheet.item .tabs .item.active {
+    /* Aktiv flik: Mörkröd med vit text */
+    background: #8e2231 !important; 
+    color: #ffffff !important;
+    
+    border: none !important;
+    margin-bottom: -2px !important; 
+    text-decoration: none !important;
+}
+
+/* ==========================================================================
+   5. RENSA GRÅ RADER & SKAPA RÖDA BOXAR
+   ========================================================================== */
+
+/* DÖDAR ALLA GRÅ SYSTEMLINJER SOM SKAPAR "RADER" MELLAN INNEHÅLLET */
+.pbta.sheet.item .sheet-body,
+.pbta.sheet.item form.item-form,
+.pbta.sheet.item .tab,
+.pbta.sheet.item .item-properties,
+.pbta.sheet.item .item-properties > div,
+.pbta.sheet.item section.sheet-body .form-group-stacked,
+.pbta.sheet.item section.sheet-body .move-result,
+.pbta.sheet.item section.sheet-body li,
+.pbta.sheet.item section.sheet-body li + li,
+.pbta.sheet.item .cell .cell__title {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.pbta.sheet.item form.item-form,
+.pbta.sheet.item .sheet-body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+
+/* KORRIGERAD: margin-bottom minskad från 16px till 8px för tätare rutor */
+.pbta.sheet.item section.sheet-body .cell,
+.pbta.sheet.item .move-result, 
+.pbta.sheet.item .form-group-stacked {
+    background: rgba(255, 255, 255, 0.4) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;       /* Gjorde även rutorna något mer kompakta inuti */
+    margin-bottom: 8px !important;   /* Halverat avstånd mellan rutorna (från 16px) */
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+
+    /* Den solida röda ramen runt innehållsblocken */
+    border: 2px solid #8e2231 !important;
+}
+
+/* Snyggar till undertitlar inuti de röda boxarna (t.ex. vid framgångsnivåer) */
+.pbta.sheet.item section.sheet-body .cell .cell__title {
+    font-size: 1.2rem !important;
+    color: #1a1a1a !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    padding-bottom: 4px !important; 
+    width: 100% !important;
+    border-bottom: 1px solid rgba(142, 34, 49, 0.3) !important; 
+}
+
+.pbta.sheet.item section.sheet-body .cell .cell__description,
+.pbta.sheet.item section.sheet-body .cell .item-description,
+.pbta.sheet.item section.sheet-body .cell .cell__wrapper,
+.pbta.sheet.item section.sheet-body .cell .cell__content,
+.pbta.sheet.item section.sheet-body .cell .editor-content {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important; 
+    color: #1a1a1a !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 2px 4px !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* ==========================================================================
+   6. FORMULÄRFÄLT, REDIGERARE & SCROLL (FOUNDRY MENY MED RAD-FIX UTAN LINJE)
+   ========================================================================== */
+
+/* Träffar Foundrys ytterfönster OCH fliken för att utplåna rullisten helt */
+.pbta.sheet.item form.item-form,
+.pbta.sheet.item .sheet-body,
+.pbta.sheet.item .sheet-body .tab[data-tab="details"],
+.pbta.sheet.item .tab[data-tab="details"] {
+    overflow: visible !important;
+    overflow-y: visible !important;
+    height: auto !important; 
+}
+
+/* Form-group strukturerad som ett rutnät (Grid) */
+.pbta.sheet.item .form-group {
+    display: grid !important;
+    grid-template-columns: 75px 1fr !important; 
+    gap: 10px !important;
+    align-items: center !important;
+    margin-bottom: 12px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+}
+
+/* Höjden ökad till 34px och padding justerad så texten aldrig klipps */
+.pbta.sheet.item .form-group input[type="text"],
+.pbta.sheet.item .form-group input[type="number"],
+.pbta.sheet.item .form-group select {
+    border: 2px solid #8e2231 !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.4) !important;
+    color: #1a1a1a !important;
+    font-family: 'Signika', sans-serif !important;
+    
+    padding: 4px 10px !important;   
+    height: 34px !important;        
+    
+    width: 100% !important; 
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Etiketten till vänster - ligger i en mycket kompakt kolumn på 75px */
+.pbta.sheet.item .form-group label {
+    font-weight: bold !important;
+    color: #1a1a1a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important; 
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Ändrat dropdown-valens bakgrund från guld till mjuk äggvit (#fdfbf7) */
+.pbta.sheet.item select,
+.pbta.sheet.item select option {
+    background-color: #fdfbf7 !important; 
+    color: #1a1a1a !important;
+}
+
+.pbta.sheet.item input[type="checkbox"] {
+    accent-color: #8e2231 !important; 
+    width: 18px !important;  
+    height: 18px !important;
+    justify-self: start !important; 
+}
+
+.pbta.sheet.item .sheet-footer button,
+.pbta.sheet.item button[type="submit"] {
+    background: #8e2231 !important;
+    color: white !important;
+    border: 1px solid #8e2231 !important;
+    font-family: "Almendra SC", serif !important;
+    padding: 4px 10px !important;
+    cursor: pointer !important;
+}
+
+.pbta.sheet.item .cell__actions button,
+.pbta.sheet.item .editor-edit,
+.pbta.sheet.item .item-controls button,
+.pbta.sheet.item button.editor-edit {
+    background: transparent !important;
+    color: #4a4a4a !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.pbta.sheet.item .cell__actions button:hover,
+.pbta.sheet.item .editor-edit:hover {
+    color: #8e2231 !important;
+}
+
+/* --- FOUNDRY STANDARD PROSEMIRROR EDITOR --- */
+.pbta.sheet.item .editor,
+.pbta.sheet.item .prosemirror {
+    border: 2px solid #8e2231 !important; 
+    border-radius: 6px !important;
+    margin-top: 5px;
+}
+
+/* Återställer menyn, tillåter radbrytning och döljer den skärande linjen */
+.pbta.sheet.item menu.editor-menu {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;       
+    flex-flow: row wrap !important;   
+    justify-content: flex-start !important; 
+    
+    /* Justering för att ge raderna utrymme i höjdled */
+    gap: 6px 6px !important; 
+    line-height: normal !important;
+    
+    /* NY FIX: Tar bort det dolda strecket som skar igenom knapparna */
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    
+    height: auto !important;          
+    min-height: unset !important;
+    max-height: unset !important;
+    overflow: visible !important;
+}
+
+/* Hindrar knapparna från att sträcka ut sig eller ärva fasta linjehöjder */
+.pbta.sheet.item menu.editor-menu li {
+    flex: 0 0 auto !important; 
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    border: none !important; /* Tar bort eventuella interna kantlinjer på knappgrupperna */
+}
+
+/* Säkerställer att spar- och kodknappar flyter med naturligt vid radbrytning */
+.pbta.sheet.item menu.editor-menu li.right,
+.pbta.sheet.item menu.editor-menu li.source-code-edit {
+    margin-left: unset !important; 
+}
+
+/* Säkerhetsspärr: döljer globala rullister om fönstret tvingas till fasta mått */
+.pbta.sheet.item ::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important; 
+}
+
+/* ==========================================================================
+   ENBART PLAYBOOK-KORTET: FLIK-JUSTERING FÖR ATT FÖRHINDRA RADBRYTNING
+   ========================================================================== */
+
+/* Träffar enbart flikmenyn på Item-kort (Playbooks) */
+.pbta.sheet.item .tabs {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;        /* Tvingar flikarna att hålla sig på EN rad */
+    justify-content: flex-start !important;
+    gap: 4px !important;                 /* Minskat gap mellan flikarna */
+}
+
+/* Krymper själva flikarna så att alla 4 ryms i bredd */
+.pbta.sheet.item .tabs .item {
+    font-size: 1.1rem !important;        /* Sänkt från 1.3rem för att spara utrymme */
+    padding: 5px 8px !important;         /* Krympt padding på sidorna (från 15px till 8px) */
+    white-space: nowrap !important;      /* Tvingar "Item Grant" att STRETA UT SIG på en rad */
+    letter-spacing: 0px !important;      /* Drar ihop bokstäverna minimalt för extra utrymme */
+}
+
+/* ==========================================================================
+   ENBART PLAYBOOK-KORTET: SKOTTSÄKER FIX FÖR AVSTÅND OCH SPARNING
+   ========================================================================== */
+
+/* 1. SE TILL ATT TEXTEN OCH ALLA DESS BEHÅLLARE LIGGER KVAR PÅ SINA ORIGINALPLATSER */
+.pbta.sheet.item .editor,
+.pbta.sheet.item .editor-container,
+.pbta.sheet.item .prosemirror,
+.pbta.sheet.item .editor-content,
+.pbta.sheet.item .ProseMirror {
+    position: relative !important;
+    margin-top: 0 !important;       /* Nollställer ALLA marginaler så spar-skriptet hittar rätt */
+    height: auto !important;
+    min-height: unset !important;
+    overflow: visible !important;
+}
+
+/* Intern luft i texten, helt utan att störa sparningsstrukturen */
+.pbta.sheet.item .editor .ProseMirror,
+.pbta.sheet.item .editor .editor-content {
+    padding-top: 8px !important;     /* Mjukt och lagom avstånd inuti texten */
+    padding-bottom: 8px !important;  
+    padding-left: 10px !important;   
+    padding-right: 30px !important;  /* Ger utrymme så texten inte krockar med sparaknappen i hörnet */
+}
+
+/* 2. VERKTYGSMENYN (KNAPPARNA) - Det är ENBART den här vi flyttar för att skapa luft */
+.pbta.sheet.item menu.editor-menu {
+    position: relative !important;
+    z-index: 10 !important;          /* Ligger tryggt över texten */
+    height: auto !important;          
+    max-height: unset !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-wrap: wrap !important;       /* Tillåter radbrytning på playbook */
+    gap: 6px 6px !important;
+    
+    /* DEN MAGISKA STÖTDÄMPAREN: Trycker ner texten utan att flytta på textens behållare */
+    padding-bottom: 12px !important;  
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important; /* En supertunn, diskret linje som delar av knappar och text snyggt */
+}
+
+/* 3. SPAR/REDIGERA-KNAPPAR (I VILOLÄGE) - Hålls helt i systemets originalskick */
+.pbta.sheet.item .editor-edit,
+.pbta.sheet.item .editor-controls {
+    z-index: 99 !important;
+    pointer-events: auto !important;
+}
